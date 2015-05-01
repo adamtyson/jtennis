@@ -612,6 +612,11 @@
     <Content Include="Views\BookingForms\_Summer2015Adultsgroup.cshtml" />
     <Content Include="Views\BookingForms\_Summer2015Adultsteam.cshtml" />
     <Content Include="Views\Other\BookingConfirmation.cshtml" />
+    <Content Include="Views\BookingForms\Autumn2015\_tots.cshtml" />
+    <Content Include="Views\Juniors\BookNowAutumn2015.cshtml" />
+    <Content Include="Views\BookingForms\Autumn2015\_mini.cshtml" />
+    <Content Include="Views\BookingForms\Autumn2015\_juniors.cshtml" />
+    <Content Include="Views\BookingForms\Autumn2015\_adults.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
