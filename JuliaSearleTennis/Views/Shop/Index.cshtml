@@ -1,0 +1,177 @@
+﻿@{
+    ViewBag.Title = "Shop";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="headline"><h2>Catalogue</h2></div>
+  
+    <div class="row">
+        <div class="col-md-9">
+            <p>
+                Show your colours with pride! We provide a range of branded clothing and equipment to get you started on your tennis career.
+            </p>
+
+            <h3>Clothing</h3>
+            <div class="panel panel-blue margin-bottom-40">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Buy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T-shirts</td>
+                            <td>£7.00</td>
+                            <td>Navy blue with the Wigmore logo</td>
+                            <td>
+                                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="CN6SE59THVR6L">
+                                    <table>
+                                        <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr>
+                                        <tr>
+                                            <td>
+                                                <select name="os0">
+                                                    <option value="Age 3-4yrs">Age 3-4yrs £7.00 GBP</option>
+                                                    <option value="Age 5-6yrs">Age 5-6yrs £7.00 GBP</option>
+                                                    <option value="Age 7-8yrs">Age 7-8yrs £7.00 GBP</option>
+                                                    <option value="Age 9-11yrs">Age 9-11yrs £7.00 GBP</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <input type="hidden" name="currency_code" value="GBP">
+                                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sweat shirts</td>
+                            <td>£10</td>
+                            <td>Dark blue with a small Wigmore logo on the left breast </td>
+                            <td>
+                                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="H99CP7YTKPJZ2">
+                                    <table>
+                                        <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr>
+                                        <tr>
+                                            <td>
+                                                <select name="os0">
+                                                    <option value="Age 7-8yrs">Age 7-8yrs £10.00 GBP</option>
+                                                    <option value="Age 9-11yrs">Age 9-11yrs £10.00 GBP</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <input type="hidden" name="currency_code" value="GBP">
+                                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Vouchers</h3>
+            <div class="panel panel-blue margin-bottom-40">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Buy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gift vouchers</td>
+                            <td>£25 - £180</td>
+                            <td>The perfect gift for any tennis lover! Vouchers do not have an expiry date</td>
+                            <td>
+                                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="2YJXLB3EPN3TQ">
+                                    <table>
+                                        <tr><td><input type="hidden" name="on0" value="Number of Lessons">Number of Lessons</td></tr>
+                                        <tr>
+                                            <td>
+                                                <select name="os0">
+                                                    <option value="1 x Private Lesson (Wigmore members)">1 x Private Lesson (Wigmore members) £25.00 GBP</option>
+                                                    <option value="1 x Private Lesson (non members)">1 x Private Lesson (non members) £29.00 GBP</option>
+                                                    <option value="6 x Private Lessons (Wigmore members)">6 x Private Lessons (Wigmore members) £150.00 GBP</option>
+                                                    <option value="6 x Private Lessons (non members)">6 x Private Lessons (non members) £180.00 GBP</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <input type="hidden" name="currency_code" value="GBP">
+                                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+            <h3>Equipment</h3>
+            <div class="panel panel-blue margin-bottom-40">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Buy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Racket</td>
+                            <td>£10 - £50</td>
+                            <td>
+                                You'll need one of these to hit the ball. Specially selected for people new to the sport, these rackets represent 
+                                excellent value with great performance for entry level and intermediate players.
+                            </td>
+                            <td>out of stock</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <!-- Contacts -->
+            <div class="headline"><h2>Contact</h2></div>
+            If you would like further information, or or advice on purchases please contact:
+            <ul class="list-unstyled who margin-bottom-30">
+                <li><a href="#"><i class="fa fa-home"></i>Julia Searle</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>julia@tenniscoaching.london</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>07816 004992</a></li>
+
+            </ul>
+            <img class="img-responsive" src="@Url.Content("~/img/jtennis_logo.jpg")" alt="" />
+
+        </div>
+    </div>
+</div>
+
+

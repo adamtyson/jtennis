@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Tots tennis";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+<link href="@Url.Content("~/CSS/JuniorBookingButtons.css")" rel="stylesheet" />
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="row margin-bottom-40">
+        <div class="col-md-6 md-margin-bottom-40">
+            <h2>Tots Tennis (age 3-4yrs)</h2>
+            <p>We offer a full Tots Tennis programme to introduce children to the game</p>
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa fa-check color-green"></i>Maximum Ratio of 1:6
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i> Soft balls, smaller racket and modified court sizes
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	ABCs development (Agility, Balance and Co-ordination)
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i> Learn tennis basics
+                </li>
+
+                <li>
+                    <i class="fa fa-check color-green"></i>	Lots of fun!
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Stickers for everyone
+                </li>
+            </ul>
+
+
+            <!-- Blockquotes -->
+            <blockquote class="hero-unify">
+                <p>Award winning tennis coaching. We bring a personal and effective approach to every player we work with, which is why.</p>
+                <small>Founder Julia Searle</small>
+            </blockquote>
+        </div>
+
+
+        <div class="col-md-6 md-margin-bottom-40">
+            <img src="@Url.Content("~/img/join-the-fun.jpg")" class="img-responsive" />
+        </div>
+    </div><!--/row-->
+    <div class="row">
+
+        @Html.Partial("~/Views/BookingForms/_Summer2015tots.cshtml")
+
+    </div>
+    <div class="row team margin-bottom-20">
+
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/tots1.jpg")" class="img-responsive">
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/tots2.jpg")" class="img-responsive">
+
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/tots3.jpg")" class="img-responsive">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

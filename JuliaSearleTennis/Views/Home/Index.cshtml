@@ -1,0 +1,164 @@
+﻿@{
+    ViewBag.Title = "Welcome To JTennis";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link rel="stylesheet" href="@Url.Content("~/assets/plugins/sky-forms/version-2.0.1/css/sky-forms.css")">
+
+<link rel="stylesheet" href="@Url.Content("~/assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css")">
+<style>
+.job-img {
+	overflow: hidden;
+	position: relative;
+	min-height: 300px;
+	background: url(@Url.Content("~/img/lots-of-balls-sized.jpg")) 70% 40% no-repeat;
+}
+</style>
+<div class="job-img margin-bottom-30">
+    <div class="job-banner">
+        <h2>Quality Tennis Coaching for Everyone</h2>
+    </div>
+</div>
+
+<!--=== Content Part ===-->
+<div class="container content">
+
+    <div class="row margin-bottom-40">
+        <div class="col-md-3 col-sm-6">
+            <div class="service-block service-block-sea service-or">
+                <div class="service-bg"></div>
+                <i class="icon-custom icon-color-light rounded-x fa fa-gamepad"></i>
+                <h2 class="heading-md">PLAY</h2>
+                <p>Learn the shots and have fun playing the game using our unique Game-Based approach </p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="service-block service-block-red service-or">
+                <div class="service-bg"></div>
+                <i class="icon-custom icon-color-light rounded-x icon-line icon-graduation"></i>
+                <h2 class="heading-md">LEARN</h2>
+                <p>Gain tactical &amp; technical teaching from our experienced LTA licensed coaches</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="service-block service-block-blue service-or">
+                <div class="service-bg"></div>
+                <i class="icon-custom icon-color-light rounded-x icon-line icon-users"></i>
+                <h2 class="heading-md">SOCIALISE</h2>
+                <p>Meet other players, arrange a game, play doubles or relax in the clubhouse</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="service-block service-block-purple service-or">
+                <div class="service-bg"></div>
+                <i class="icon-custom icon-color-light rounded-x icon-line icon-trophy"></i>
+                <h2 class="heading-md">COMPETE</h2>
+                <p>Whatever your level, put your game into practice with singles and doubles matches</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="parallax-team parallaxBg">
+        <div class="container content">
+            <div class="title-box-v2">
+                <h2>Reap the rewards of a <span class="color-green">lifetime </span> in Tennis</h2>
+                <blockquote class="hero-unify">
+                    <p>
+                        We provide quality coaching for all, irrespective of age, ability or background.
+                        <br />
+                        We aim to be professional, affordable, and most of all fun.
+                    </p>
+                    <small>Head Coach and founder, Julia Searle</small>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="headline"><h2>Quick links</h2></div>
+    <div class="row margin-bottom-20">
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img class="img-responsive" src="@Url.Content("~/img/discount-picture.png")" alt="">
+                    </div>
+                    <a class="btn-more hover-effect" href="@Url.Action("BookNow","Camps")">read more +</a>
+                </div>
+                <div class="caption">
+                    <h3><a class="hover-effect" href="#">Summer holiday camps</a></h3>
+                    <p>Book now to secure your child's holiday camp place for Easter or the summer</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img class="img-responsive" src="@Url.Content("/img/junior-results.jpg")" alt="">
+                    </div>
+                    <a class="btn-more hover-effect" href="#"></a>
+                </div>
+                <div class="caption">
+                    <h3><a class="hover-effect" href="#">Receive our latest offers and information</a></h3>
+
+
+                   
+                        <form class="sky-form" action="~/form2email/formmail.asp" method="post" id="sky-form3">
+                            <input name="recipients_old" type="hidden" value="info&#64;\\web-123win\winpackage23\tenniscoaching.london\www.tenniscoaching.london\web\content\form2email\setup_script.cgi" />
+
+                            <input type="hidden" name="_recipients" value="juliasearle31@gmail.com" />
+                           
+                            <input name="_envars" type="hidden" value="HTTP_USER_AGENT,REMOTE_ADDR" />
+                           
+                            <input type="hidden" name="_redirectUrl" value="@Url.Action("MailingListResponse", "Other")" />
+
+                            <fieldset>
+                                <section>
+                                    <header>
+                                        Newsletter
+                                    </header>
+                                    <label class="label">Email</label>
+                                    <label class="input">
+                                        <input type="email">
+                                    </label>
+                                    <input type="hidden" name="subject" value="Add me to your mailing list please" />
+                                    <input type="submit" class="btn-u btn-u-default" value="Submit"/>
+                                </section>
+                            </fieldset>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img class="img-responsive" src="@Url.Content("/img/restringing.jpg")" alt="">
+                    </div>
+                    <a class="btn-more hover-effect" href="@Url.Action("Restringing","Other")">read more +</a>
+                </div>
+                <div class="caption">
+                    <h3><a class="hover-effect" href="@Url.Action("Restringing","Other")">Professional restringing</a></h3>
+                    <p>A tailor made service from an expert ex-tour professional.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img class="img-responsive" src="@Url.Content("/img/coaching-tips.jpg")" " alt=" ">
+                    </div>
+                    <a class="btn-more hover-effect" href="@Url.Action("Holidays","Other")">read more +</a>
+                </div>
+                <div class="caption">
+                    <h3><a class="hover-effect" href="@Url.Action("Holidays","Other")">Tennis tours and holidays</a></h3>
+                    <p>The perfect combination! Time away and tennis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--=== End Content Part ===-->

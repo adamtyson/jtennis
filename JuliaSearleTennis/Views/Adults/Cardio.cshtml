@@ -1,0 +1,195 @@
+﻿
+@{
+    ViewBag.Title = "Cardio";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+
+<div class="container content">
+    <div class="row team margin-bottom-20">
+       
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/cardio-tennis-resized.jpg")" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/cardio3resized.jpg")" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/cardio2.jpg")" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="row margin-bottom-40">
+        <div class="col-md-6 md-margin-bottom-40">
+            <h2>Cardio Tennis</h2>
+            <p>Cardio Tennis is a fun group activity featuring drills to give players of all abilities a high energy cardio workout.</p>
+            <ul class="list-unstyled">
+
+                <li>
+                    <i class="fa fa-check color-green"></i>	Fitness work out
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Fun
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Social
+                </li>
+
+            </ul>
+            <p>Cardio Tennis runs on Tuesdays from <b>8pm - 9pm</b> starting on the <b>14th April 2015</b>. You do not need to book in advance, just turn up and play or use the form below. <br />
+            </p>
+            <ul class="list-unstyled">Pricing:
+                <li>
+                    <i class="fa fa-check color-green"></i>Members: £8 per session, or £40 for 6 (can be used any time)
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>Non members: £12 per session, or £60 for 6 (can be used any time)
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>Please note there is a £1 surcharge for sessions not paid in advance
+                </li>
+            </ul>
+           
+
+            <!-- Blockquotes -->
+            
+        </div>
+
+        <div class="col-md-6 md-margin-bottom-40">
+            <div class="responsive-video">
+                <iframe width="854" height="510" src="https://www.youtube.com/embed/A_Tgu3XekHI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/cardio-tennis-logo.jpg")" class="img-responsive">
+            </div>
+        </div>
+    </div><!--/row-->
+   
+    <div>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+    </div>
+    <div class="container">
+       
+            <h3 class="panel-title">Book now</h3>
+      
+        <table cellspacing="5" class="table table-striped">
+            <thead>
+                <tr>
+
+                    <th>Course description</th>
+                    <th>Wigmore Members booking</th>
+                    <th>Non members booking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td valign="top">1 off session</td>
+                    <td valign="top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="3QEGP76ZGQY7Y">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Select Date">Select Date</td></tr>
+                                <tr>
+                                    <td>
+                                        <select name="os0">
+                                            <option value="14th April 2015">14th April 2015 £8.00 GBP</option>
+                                            <option value="21st April 2015">21st April 2015 £8.00 GBP</option>
+                                            <option value="28th April 2015">28th April 2015 £8.00 GBP</option>
+                                            <option value="5th May 2015">5th May 2015 £8.00 GBP</option>
+                                            <option value="12th May 2015">12th May 2015 £8.00 GBP</option>
+                                            <option value="19th May 2015">19th May 2015 £8.00 GBP</option>
+                                            <option value="26th May 2015">26th May 2015 £8.00 GBP</option>
+                                            <option value="2nd June 2015">2nd June 2015 £8.00 GBP</option>
+                                            <option value="9th June 2015">9th June 2015 £8.00 GBP</option>
+                                            <option value="16th June 2015">16th June 2015 £8.00 GBP</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td><input type="hidden" name="on1" value="Name of Participant">Name of Participant</td></tr>
+                                <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="GBP">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+                    </td>
+                    <td valign="top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="YM3B73H2C7RXN">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Select Date">Select Date</td></tr>
+                                <tr>
+                                    <td>
+                                        <select name="os0">
+                                            <option value="14th April 2015">14th April 2015 £12.00 GBP</option>
+                                            <option value="21st April 2015">21st April 2015 £12.00 GBP</option>
+                                            <option value="28th April 2015">28th April 2015 £12.00 GBP</option>
+                                            <option value="5th May 2015">5th May 2015 £12.00 GBP</option>
+                                            <option value="12th May 2015">12th May 2015 £12.00 GBP</option>
+                                            <option value="19th May 2015">19th May 2015 £12.00 GBP</option>
+                                            <option value="26th May 2015">26th May 2015 £12.00 GBP</option>
+                                            <option value="2nd June 2015">2nd June 2015 £12.00 GBP</option>
+                                            <option value="9th June 2015">9th June 2015 £12.00 GBP</option>
+                                            <option value="16th June 2015">16th June 2015 £12.00 GBP</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td><input type="hidden" name="on1" value="Name of Participant">Name of Participant</td></tr>
+                                <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="GBP">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">6 sessions</td>
+                    <td valign="top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="QDCKA85JC3KKG">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Name of Participant">Name of Participant</td></tr>
+                                <tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+                    </td>
+                    <td valign="top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="MG6HLBRV64M84">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Name of Participant">Name of Participant</td></tr>
+                                <tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+                    </td>
+                </tr>
+
+        </table>
+    </div>
+</div>
+
+

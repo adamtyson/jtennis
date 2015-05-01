@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Wigmore";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="container content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-9 md-margin-bottom-40">
+                <h2>Wigmore Tennis Club</h2>
+                <p>Wigmore opended in May 1911 and is situated in a quiet enclave, in attractive grounds close to Streatham High Road.</p>
+                <ul class="list-unstyled">
+                    <li><i class="color-green fa fa-check"></i>8 all weather courts - 4 artificial clay, 3 porous acrylic and 1 artifical grass</li>
+                    <li><i class="color-green fa fa-check"></i>7 flood lit courts</li>
+                    <li><i class="color-green fa fa-check"></i>800 members - approximately 400 adults and 400 juniors</li>
+                    <li><i class="color-green fa fa-check"></i>Top of the range ball machine</li>
+                    <li><i class="color-green fa fa-check"></i>Practice wall</li>
+                    <li><i class="color-green fa fa-check"></i>Club house - fully fitted kitchen, bar, pool table, table tennis and television</li>
+                </ul>
+                <h2>Wigmore membership</h2>
+                <p>
+                    Wigmore's adult membership is currently at capacity and there is a waiting list to join the club.
+                    However, there are still places in the off-peak category and the junior categories. To apply for club membership please complete the online form here.
+                    <br />
+                    <a href="http://wigmoretennis.clubsolution.co.uk/proc_bruger.asp">http://wigmoretennis.clubsolution.co.uk/proc_bruger.asp</a>  
+                </p>
+            </div>
+            <div class="col-md-3 md-margin-bottom-40">
+                <div class="thumbnail-style">
+                    <img src="~/img/wigmore-clubhouse.jpg" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Basic Map --><div class="thumbnail-style">
+        <div class="headline"><h3>Map</h3></div>
+                          <p>
+
+                              <img src="~/img/wigmore-logo-blue.png" style="height:50px;" class="img-responsive" />
+                              43 Becmead Avenue<br />
+                              Streatham<br />
+                              LONDON<br />
+                              SW16 1UJ<br />
+                              <a class="rounded-x" href="http://wwww.wigmoretennis.com">www.wigmoretennis.com</a>
+                          </p>
+    </div>
+   
+    <div id="map" class="map margin-bottom-50"></div>
+    <!-- End Basic Map -->
+    <!-- Panorama Map -->
+    <div class="headline"><h3>Panorama Map</h3></div>
+    <div id="panorama" class="map margin-bottom-40"></div>
+    <!-- End Panorama Map -->
+</div>
+
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="@Url.Content("~/assets/plugins/gmap/gmap.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/assets/js/pages/page_contacts.js")"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        ContactPage.initMap();
+        ContactPage.initPanorama();
+
+    });
+</script>
+
+
+
+
+
+
+

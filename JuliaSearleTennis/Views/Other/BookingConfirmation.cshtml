@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Booking confirmation";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+
+
+
+<div class="container content">
+
+
+    <div class="headline"><h2>Confirmation</h2></div>
+
+    <div class="row">
+
+        <p>
+           Thank you for your booking. Your payment has been received and your transaction is now complete. 
+        </p>
+        <p>
+           Before attending please ensure you have read the following where relevant:
+            <ul class="list-unstyled">
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("Policies","Other")">Policies</a></li>
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("Terms","Juniors")">Terms and conditions for junior groups</a></li>
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("Terms","Adults")">Terms and conditions for adult groups</a></li>
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("Terms","Camps")">Terms and conditions for holiday camps</a></li>
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("FAQ","Adults")">FAQs for adult groups</a></li>
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("FAQ","Juniors")">FAQs for junior groups</a></li>
+                <li><i class="fa fa-check color-green"></i><a href="@Url.Action("FAQ","Camps")">FAQs for holiday camps</a></li>
+            </ul>
+        </p>
+       <p>
+           If you have any other questions please contact <a href="mailto:julia@tenniscoaching.london">julia@tenniscoaching.london</a>
+       </p>
+    </div>
+    <div>
+       
+    </div>
+  
+</div>
+  
+

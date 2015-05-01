@@ -1,0 +1,469 @@
+﻿@{
+    ViewBag.Title = "Course Syllabus";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/CalendarIcons.css")" rel="stylesheet" />
+
+<div class="container content">
+    <div class="row">
+        <!--Striped Rows-->
+        <div class="col-md-">
+            <h2>What does a typical course look like?  </h2>
+            <div class="tab-v1">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#minicoaching" data-toggle="tab">Mini</a></li>
+                    <li><a href="#juniorcoaching" data-toggle="tab">Junior</a></li>
+                    <li><a href="#performancecoaching" data-toggle="tab">Performance</a></li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="minicoaching">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-minis1.jpg")">
+                                        </li>
+                                        <li>
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-minis2.jpg")">
+                                        </li>
+                                        <li>
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-minis3.jpg")">
+                                        </li>
+                                        <li>
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-minis4.jpg")">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Mini coaching</h4>
+                                <div class="panel panel-purple margin-bottom-40">
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Week</th>
+                                                <th>Theme</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>1</span>
+                                                    </time>
+                                                </td>
+                                                <td>Forehands</td>
+                                                <td>Improving consistency/effectiveness, by looking at the techniqe and tactical outcome</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>2</span>
+                                                    </time>
+                                                </td>
+                                                <td>Backhands</td>
+                                                <td>Improving consistency/effectiveness, by looking at the techniqe and tactical outcome</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>3</span>
+                                                    </time>
+                                                </td>
+                                                <td>Movement</td>
+                                                <td>Looking at court positioning, recovery, footwork patterns and balance</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>4</span>
+                                                    </time>
+                                                </td>
+                                                <td>Serving</td>
+                                                <td>Developing sound technique to achieve greater consistency and effectiveness on the serve </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>5</span>
+                                                    </time>
+                                                </td>
+                                                <td>Matchplay - Singles</td>
+                                                <td>Learning the rules and the scoring system. Practising points including looking at shot selection</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>6</span>
+                                                    </time>
+                                                </td>
+                                                <td>Building</td>
+                                                <td>Trying to gain an advantage in a point by making your opponent move</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>7</span>
+                                                    </time>
+                                                </td>
+                                                <td>Defending</td>
+                                                <td>Trying to get the ball back in court effectively when "on the run"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>8</span>
+                                                    </time>
+                                                </td>
+                                                <td>Volleys and Smashes</td>
+                                                <td>Learning good technique at the net, including the grip, contact and footwork</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>9</span>
+                                                    </time>
+                                                </td>
+                                                <td>Mini Tennis Rally Awards</td>
+                                                <td>Having a go at the LTA's Rally Awards which include challenges in rallying, serving and net play. 
+                                                Your child will receive a certificate for the appropriate level on the last week of term. 
+                                                <a href="@Url.Content("~/img/LTA Rally Awards.pdf")">Click here to see more on the rally awards.</a> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>10</span>
+                                                    </time>
+                                                </td>
+                                                <td>Match Practice - Singles or Doubles</td>
+                                                <td>Recapping the term's course, and putting all skills into practice during some timed tennis matches.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade in" id="juniorcoaching">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-juniors2.jpg")">
+                                        </li>                                                                                  
+                                        <li>                                                                                   
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-juniors4.jpg")">
+                                        </li>                                                                                  
+                                        <li>                                                                                   
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-juniors5.jpg")">
+                                        </li>                                                                                  
+                                        <li>                                                                                   
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/syllabus-juniors6.jpg")">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Junior coaching</h4>
+                                <div class="panel panel-purple margin-bottom-40">
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Week</th>
+                                                <th>Theme</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>1</span>
+                                                    </time>
+                                                </td>
+                                                <td>Trading - forehands</td>
+                                                <td>Developing technique, specifically the grip, stance and swing path. How do each of these relate to our tactical intention?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>2</span>
+                                                    </time>
+                                                </td>
+                                                <td>Trading - backhands</td>
+                                                <td>Developing backhand technique (as above)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>3</span>
+                                                    </time>
+                                                </td>
+                                                <td>Movement</td>
+                                                <td>Improving movement in a "back of the court situation" by looking out the split step/first step, footwork patterns, balance and recovery positions </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>4</span>
+                                                    </time>
+                                                </td>
+                                                <td>First Serve and Return</td>
+                                                <td>Developing technique to achieve greater control of direction and greater power. How can the returner neutralize an effective first serve?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>5</span>
+                                                    </time>
+                                                </td>
+                                                <td>Second Serve and Return</td>
+                                                <td>Developing technique to achieve greater consistency using a top spin or slice for control. How can the returner attack a second serve?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>6</span>
+                                                    </time>
+                                                </td>
+                                                <td>Volleys and Smashes</td>
+                                                <td>Developing technique to allow for more effective net play, both when in control of the point and when defending in the point.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>7</span>
+                                                    </time>
+                                                </td>
+                                                <td>Building a Point</td>
+                                                <td>How to gain the advantage over your opponent by controlling time and space? When to hit the ball cross court vs down the line, and when to approach the net</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>8</span>
+                                                    </time>
+                                                </td>
+                                                <td>Neutralizing a Point</td>
+                                                <td>How to get back in the point when under pressure by developing the skills to hit the ball on the run and neutralize effectively</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>9</span>
+                                                    </time>
+                                                </td>
+                                                <td>Match Practice - Doubles</td>
+                                                <td>Playing points, while looking specifically at court positioning and team work</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>10</span>
+                                                    </time>
+                                                </td>
+                                                <td>Match Practice - Singles</td>
+                                                <td>Playing points, while looking specifically at court positioning and shot selection</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade in" id="performancecoaching">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/performancetennis1.jpg")">
+                                        </li>                                                                         
+                                        <li>                                                                          
+                                            <img alt="" class="img-responsive img-tab-space" src="@Url.Content("~/img/performancetennis2.jpg")">
+                                        </li>                                                                                                                                               
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Performance coaching</h4>
+                                <div class="panel panel-purple margin-bottom-40">
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Week</th>
+                                                <th>Theme</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>1</span>
+                                                    </time>
+                                                </td>
+                                                <td>Trading</td>
+                                                <td>What is a rising ball, and how can I hit one? How can I keep my opponent behind the baseline during a "both back" situation?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>2</span>
+                                                    </time>
+                                                </td>
+                                                <td>Building</td>
+                                                <td>How can I put my opponent under pressure in a point, by taking control over time and space</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>3</span>
+                                                    </time>
+                                                </td>
+                                                <td>Dominating the middle</td>
+                                                <td>Can I take control of the middle of the court? What is an inside-out forehand and how can I develop mine into a weapon? </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>4</span>
+                                                    </time>
+                                                </td>
+                                                <td>First Serve and Return</td>
+                                                <td>Developing technique to achieve greater control of direction and greater power. How can the returner neutralize an effective first serve?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>5</span>
+                                                    </time>
+                                                </td>
+                                                <td>Second Serve and Return</td>
+                                                <td>Developing technique to achieve greater consistency using a top spin or slice for control. How can the returner attack a second serve?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>6</span>
+                                                    </time>
+                                                </td>
+                                                <td>Volleys and Smashes</td>
+                                                <td>Developing technique to allow for more effective net play, both when in control of the point and when defending in the point.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>7</span>
+                                                    </time>
+                                                </td>
+                                                <td>How to construct a point</td>
+                                                <td>What decisions do I have to make? When to hit the ball cross court vs down the line? When to approach the net?</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>8</span>
+                                                    </time>
+                                                </td>
+                                                <td>Neutralizing a Point</td>
+                                                <td>How to get back in the point when under pressure by developing the skills to hit the ball on the run and neutralize effectively</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>9</span>
+                                                    </time>
+                                                </td>
+                                                <td>Match Practice - Doubles</td>
+                                                <td>Playing points, while looking specifically at court positioning and team work</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <time datetime="2014-09-20" class="icon">
+                                                        <em></em>
+                                                        <strong>Week</strong>
+                                                        <span>10</span>
+                                                    </time>
+                                                </td>
+                                                <td>Match Practice - Singles</td>
+                                                <td>Playing points, while looking specifically at court positioning and shot selection</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Striped Rows-->
+    </div>
+</div>
+

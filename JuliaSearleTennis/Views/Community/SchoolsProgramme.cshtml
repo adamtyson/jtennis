@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "SchoolsProgramme";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="headline"><h2>Our Schools Programme</h2></div>
+
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="col-md-4 margin-bottom-25">
+                <img class="img-responsive" src="@Url.Content("~/img/schoolspic1.jpg")" alt="" />
+            </div>
+            <div class="col-md-4 margin-bottom-25">
+                <img class="img-responsive" src="@Url.Content("~/img/schoolspic2.jpg")" alt="" />
+            </div>
+            <div class="col-md-4 margin-bottom-25">
+                <img class="img-responsive" src="@Url.Content("~/img/schoolspic3.jpg")" alt="" />
+            </div>
+
+            <p>
+                We believe passionately about making tennis more accessible for all. We provide opportunities for children and young people to get involved in the game through our school-club links.
+            </p>
+
+            <p>
+                What can we offer local schools?
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-check color-green"></i>	FREE taster sessions during school hours with our LTA qualified coaches</li>
+                    <li><i class="fa fa-check color-green"></i>	An Out of School Hours Tennis Club</li>
+                    <li><i class="fa fa-check color-green"></i>	An invitation to our annual Primary Schools Festival</li>
+                    <li><i class="fa fa-check color-green"></i>	Awareness of sessions and activities at our club for pupils and their families</li>
+                </ul>
+            </p>
+            <p>
+                What are the benefits for the school?
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-check color-green"></i>	Increased opportunities for pupils at your school</li>
+                    <li><i class="fa fa-check color-green"></i>	Raised profile of your school in the community</li>
+                    <li><i class="fa fa-check color-green"></i>	Access for your pupils to top quality facilities and equipment</li>
+                    <li><i class="fa fa-check color-green"></i>	Access to a team of qualified and experienced coaches, who can also support the development of teachers and school staff</li>
+                    <li><i class="fa fa-check color-green"></i>	Healthier and more physically active pupils, which has been proven to improve concentration and behaviour in children.</li>
+                </ul>
+            </p>
+            <p>
+
+            </p>
+        </div>
+        <div class="col-md-3">
+            <!-- Contacts -->
+            <div class="headline"><h2>Contact</h2></div>
+            If you would like further information about how we can support your school please contact:
+            <ul class="list-unstyled who margin-bottom-30">
+                <li><a href="#"><i class="fa fa-home"></i>Schools development officer: Scott Davies</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>scott@tenniscoaching.london</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>07777 645 628</a></li>
+                <!--<li><a href="#"><i class="fa fa-globe"></i>http://www.example.com</a></li>-->
+            </ul>
+            <img class="img-responsive" src="@Url.Content("~/img/Aegon-schools-logo.jpg")" alt="" />
+        </div>
+    </div>
+
+    <div class="headline"><h2>View existing school links</h2></div>
+    <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Sunnyhill Primary School
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    We run an after school tennis club for Sunnyhill pupils at Wigmore Tennis club. The infant club is on Tuesdays from 3:30 - 4:30pm and the junior club is on Thursdays from 3:30 - 4:30pm.
+                    <br />
+                    Summer Term 2015 is a 12 week course starting the week commencing 13 April. The cost is £52.00 per person.
+                    <div>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="business" value="juliasearle31@gmail.com">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="item_name" value="Tuesday infant club - Sunnyhilll">
+                            <input type="hidden" name="amount" value="52">  <input type="hidden" name="currency_code" value="GBP">
+                            <input class="Yellow" type="submit" name="submit" value="Book Tuesday infant club">
+                        </form>
+                    </div>
+                    <div>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="business" value="juliasearle31@gmail.com">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="item_name" value="Thursday junior club - Sunnyhilll">
+                            <input type="hidden" name="amount" value="52">  <input type="hidden" name="currency_code" value="GBP">
+                            <input class="Yellow" type="submit" name="submit" value="Book Thursday junior club">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        Holy Ghost Primary School
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    We run an after school tennis club for Holy Ghost pupils at the school site. The club is for children in years 5 and 6 and is held on Mondays from 3:30 - 4:30pm.
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Streatham and Clapham High School
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Our popular club returns for the summer term in April 2015. Students have the oppourtunity to take private lessons or small groups at the school site. Sessions are held
+                    before school, at lunchtimes and after school.
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        Streatham and Clapham Junior School
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    A new school club is starting April 2015.
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+

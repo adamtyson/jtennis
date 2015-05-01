@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<link rel="stylesheet" href="@Url.Content("~/assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css")">
+
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="row">
+        <form action="~/form2email/formmail.asp" method="post" id="sky-form3" class="sky-form">
+            <input name="recipients_old" type="hidden" value="info&#64;\\web-123win\winpackage23\tenniscoaching.london\www.tenniscoaching.london\web\content\form2email\setup_script.cgi" />
+            <input name="_requiredFields" type="hidden" value="Name,Email,Comments" />
+            <input name="_envars" type="hidden" value="HTTP_USER_AGENT,REMOTE_ADDR" />
+            <input name="_returnUrl" type="hidden" value="default.asp" />
+            <input name="_continueUrl" type="hidden" value="default.asp" />
+            <header>Contact us form</header>
+
+            <fieldset>
+                <div class="row">
+                    <section class="col col-6">
+                        <label class="label">Name</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-user"></i>
+                            <input type="text" name="name" id="name">
+                        </label>
+                    </section>
+                    <section class="col col-6">
+                        <label class="label">E-mail</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope-o"></i>
+                            <input type="email" name="email" id="email">
+                        </label>
+                    </section>
+                </div>
+
+                <section>
+                    <label class="label">Subject</label>
+                    <label class="input">
+                        <i class="icon-append fa fa-tag"></i>
+                        <input type="text" name="subject" id="subject">
+                    </label>
+                </section>
+
+                <section>
+                    <label class="label">Message</label>
+                    <label class="textarea">
+                        <i class="icon-append fa fa-comment"></i>
+                        <textarea rows="4" name="comments" id="comments"></textarea>
+                    </label>
+                </section>
+
+            </fieldset>
+
+            <footer>
+                <input type="hidden" name="_redirectUrl" value="@Url.Action("ContactUsResponse", "Other")" />"
+                <input type="submit" value="Send message" class="button">
+            </footer>
+
+            <div class="message">
+                <i class="rounded-x fa fa-check"></i>
+                <p>Your message was successfully sent!</p>
+            </div>
+        </form>
+        <!-- Contacts -->
+
+    </div>
+</div>
+<script type="text/javascript" src="@Url.Content("~/assets/js/pages/page_contact_advanced.js")"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        PageContactForm.initPageContactForm();
+    });
+</script>

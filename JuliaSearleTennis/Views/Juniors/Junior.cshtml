@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Junior Tennis";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+<link href="@Url.Content("~/CSS/JuniorBookingButtons.css")" rel="stylesheet" />
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="row margin-bottom-40">
+        <div class="col-md-6 md-margin-bottom-40">
+            <h2>Junior tennis (age 11 - 17yrs)</h2>
+            <p>We offer a weekly tennis programme for juniors of all levels and ages. Our programme is structered to allow avery player to improve their skills, wether 
+            they are looking for a relaxed and socialable environment with their friends or high intensity training in order to reach the next level of competition.</p>
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa fa-check color-green"></i> Maximum Ratio of 1:8
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Full court size and yellow ball
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Technical and tactical coaching
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Tailormade syllabus to maximise development
+                </li>
+           </ul>
+
+
+                <!-- Blockquotes -->
+                <blockquote class="hero-unify">
+                    <p>Award winning tennis coaching. We bring a personal and effective approach to every player we work with, which is why.</p>
+                    <small>Founder Julia Searle</small>
+                </blockquote>
+        </div>
+        <div class="col-md-6 md-margin-bottom-40">
+            <div class="thumbnail-style">
+                <img src="@Url.Content("~/img/juniors-landscape1.jpg")" class="img-responsive" />
+            </div>
+        </div>
+    </div><!--/row-->
+    <div class="row">
+
+        @Html.Partial("~/Views/BookingForms/_Summer2015juniors.cshtml")
+
+    </div>
+</div>
+
+
+
+

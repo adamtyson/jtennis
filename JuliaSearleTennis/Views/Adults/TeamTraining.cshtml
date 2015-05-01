@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Team Training";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+
+<div class="container content">
+    <div class="row team margin-bottom-20">
+
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/doubles-landscape2.jpg")" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/doubles-landscape3.jpg")" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/doubles-landscape5.jpg")" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="row margin-bottom-40">
+        <div class="col-md-6 md-margin-bottom-40">
+            <h2>Team Training</h2>
+            <p>
+                Our team training sessions are run for specific club teams and 
+                focus on  tactics rather than technique. The content focusses on 
+                the game of doubles. Squads learn to train together to develop 
+                solid doubles partnerships, and improve their shot selection, 
+                court positioning and communication.
+            </p>
+            <ul class="list-unstyled">
+
+                <li>
+                    <i class="fa fa-check color-green"></i> Doubles specific
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Promotes team work
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	<a href="@Url.Action("CourseSyllabus", "Adults")">Clear syllabus</a> and lesson structure
+                </li>
+
+            </ul>
+            <p>
+               
+                Team Training runs on Saturday mornings and is open to Wigmore members who currently represent the club in a squad. 
+                If you are a current member and are not in a squad but would like to be, <a href="mailto:julia@tenniscoaching.london">please get in touch.</a>
+            </p>
+            
+        </div>
+        <div class="col-md-6 md-margin-bottom-40">
+            
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/team-training-adult.jpg")" class="img-responsive">
+            </div>
+        </div>
+    </div><!--/row-->
+
+
+    <div class="container">
+
+        <h3 class="panel-title">Book now</h3>
+
+        <div class="row">
+
+            @Html.Partial("~/Views/BookingForms/_Summer2015adultsteam.cshtml")
+
+        </div>
+    </div>
+</div>
+
+
+
+

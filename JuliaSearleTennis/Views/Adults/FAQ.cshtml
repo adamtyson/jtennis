@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "FAQ";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="container content">
+    <div class="row">
+        <div class="col-md-9">
+            <!-- General Questions -->
+            <div class="headline"><h2>General Questions</h2></div>
+            <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                What do I need to bring?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            A bottle of water and a racket. Rackets can be provided if you do not have one, but please let us know in advance if this possible.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                What should I wear?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Loose, comfortable clothing and tennis shoes. Because the club has brand new court surfaces, all players must wear flat soled tennis shoes. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                How many players are there in a group?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>There will be a maximum ratio of coaches to players of 1:8 (often better!) in all adult classes.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                What happens in wet weather?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Our classes will go ahead in most weather. Please see our terms and conditions.
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                    What will I be learning?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    We have different themes for our group coaching programme and our team training sessions. Each lesson will comprise of a tennis-specific warm up, followed by coaching,
+                                    drills and games centred around the theme of the week. Please view our <a href="@Url.Action("Syllabus","Adults")">course syllabus</a> page for more information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                    Who are the coaches?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                All our coaches are LTA or PTR qualified coaches. All hold a recent Criminal Records check and all hold first aid certificates.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                                    How do I book?
+
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                To book click on the relevant 'Book' button and then complete and submit the online form, one per player. After submitting the form the PayPal application will be available to pay by Credit Card, you do not need a PayPal account to use this method of payment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                                    For groups based at Wigmore, do I have to be a member of Wigmore Tennis Club?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Non members are allowed to participate in the group programme for ONE TERM ONLY, and the club charges a small guest fee which is payable at the time of booking. Our Team Training sessions are for club members only, as these are designed for players who are already in a squad and are representing the club.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                                    Cancellation
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Please see our <a href="@Url.Action("Terms","Adults")">terms and conditions</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div><!--/acc-v1-->
+                <!-- End General Questions -->
+                <!-- Other Questions -->
+                <div class="headline"><h2>Other Questions</h2></div>
+                <div class="panel-group acc-v1" id="accordion-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-One">
+                                    Can find the answer to your question?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-One" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="img-responsive" src="@Url.Content("~/img/ask-a-question.jpg")" alt="" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        If you can't find the answer to your question about our Adult group programme, please drop Julia an email, she will be glad to help.
+                                        <br />
+                                        <a href="mailto:julia@tenniscoaching.london">julia@tenniscoaching.london</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!--/acc-v1-->
+                <!-- End Other Questions -->
+            </div><!--/col-md-9-->
+        </div>
+
+        <div class="col-md-3">
+            <!-- Contacts -->
+            @Html.Partial("_Contact")
+
+        </div><!--/col-md-3-->
+    </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->

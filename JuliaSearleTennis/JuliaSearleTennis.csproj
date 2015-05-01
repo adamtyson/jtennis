@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54596C4D-EB3F-4162-A444-8619B802516C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JuliaSearleTennis</RootNamespace>
+    <AssemblyName>JuliaSearleTennis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\app.css" />
+    <Content Include="assets\css\blocks.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\footers\footer-default.css" />
+    <Content Include="assets\css\footers\footer-v1.css" />
+    <Content Include="assets\css\footers\footer-v2.css" />
+    <Content Include="assets\css\footers\footer-v3.css" />
+    <Content Include="assets\css\footers\footer-v4.css" />
+    <Content Include="assets\css\footers\footer-v5.css" />
+    <Content Include="assets\css\footers\footer-v6.css" />
+    <Content Include="assets\css\footers\footer-v7.css" />
+    <Content Include="assets\css\headers\header-default.css" />
+    <Content Include="assets\css\headers\header-v1.css" />
+    <Content Include="assets\css\headers\header-v2.css" />
+    <Content Include="assets\css\headers\header-v3.css" />
+    <Content Include="assets\css\headers\header-v4.css" />
+    <Content Include="assets\css\headers\header-v5.css" />
+    <Content Include="assets\css\ie8.css" />
+    <Content Include="assets\css\pages\blog.css" />
+    <Content Include="assets\css\pages\blog_magazine.css" />
+    <Content Include="assets\css\pages\blog_masonry_3col.css" />
+    <Content Include="assets\css\pages\feature_timeline1.css" />
+    <Content Include="assets\css\pages\feature_timeline2.css" />
+    <Content Include="assets\css\pages\page_404_error.css" />
+    <Content Include="assets\css\pages\page_404_error1.css" />
+    <Content Include="assets\css\pages\page_404_error2.css" />
+    <Content Include="assets\css\pages\page_404_error3.css" />
+    <Content Include="assets\css\pages\page_about.css" />
+    <Content Include="assets\css\pages\page_clients.css" />
+    <Content Include="assets\css\pages\page_coming_soon.css" />
+    <Content Include="assets\css\pages\page_contact.css" />
+    <Content Include="assets\css\pages\page_error3_404.css" />
+    <Content Include="assets\css\pages\page_error4_404.css" />
+    <Content Include="assets\css\pages\page_faq1.css" />
+    <Content Include="assets\css\pages\page_invoice.css" />
+    <Content Include="assets\css\pages\page_job.css" />
+    <Content Include="assets\css\pages\page_job_inner.css" />
+    <Content Include="assets\css\pages\page_job_inner1.css" />
+    <Content Include="assets\css\pages\page_job_inner2.css" />
+    <Content Include="assets\css\pages\page_log_reg_v1.css" />
+    <Content Include="assets\css\pages\page_log_reg_v2.css" />
+    <Content Include="assets\css\pages\page_one.css" />
+    <Content Include="assets\css\pages\page_pricing copy.css" />
+    <Content Include="assets\css\pages\page_pricing.css" />
+    <Content Include="assets\css\pages\page_promo.css" />
+    <Content Include="assets\css\pages\page_search.css" />
+    <Content Include="assets\css\pages\page_search_inner.css" />
+    <Content Include="assets\css\pages\page_search_inner_tables.css" />
+    <Content Include="assets\css\pages\portfolio-v1.css" />
+    <Content Include="assets\css\pages\portfolio-v2.css" />
+    <Content Include="assets\css\pages\pricing\pricing-bg-colored.css" />
+    <Content Include="assets\css\pages\pricing\pricing-dark.css" />
+    <Content Include="assets\css\pages\pricing\pricing-light.css" />
+    <Content Include="assets\css\pages\pricing\pricing-medium-dark.css" />
+    <Content Include="assets\css\pages\pricing\pricing-medium-light.css" />
+    <Content Include="assets\css\pages\pricing\pricing-mega-v1.css" />
+    <Content Include="assets\css\pages\pricing\pricing-mega-v2.css" />
+    <Content Include="assets\css\pages\pricing\pricing-mega-v3.css" />
+    <Content Include="assets\css\pages\pricing\pricing-rounded.css" />
+    <Content Include="assets\css\pages\pricing\pricing-zoom.css" />
+    <Content Include="assets\css\pages\pricing\pricing.css" />
+    <Content Include="assets\css\pages\pricing\pricing_accord.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v1.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v2.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v3.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v4.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v5.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v6.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v7.css" />
+    <Content Include="assets\css\pages\pricing\pricing_v8.css" />
+    <Content Include="assets\css\pages\profile.css" />
+    <Content Include="assets\css\plugins.css" />
+    <Content Include="assets\css\plugins\animate.css" />
+    <Content Include="assets\css\plugins\box-shadows.css" />
+    <Content Include="assets\css\plugins\brand-buttons\brand-buttons-inversed.css" />
+    <Content Include="assets\css\plugins\brand-buttons\brand-buttons.css" />
+    <Content Include="assets\css\plugins\brand-buttons\css\brand-buttons-inversed.min.css" />
+    <Content Include="assets\css\plugins\brand-buttons\css\brand-buttons.min.css" />
+    <Content Include="assets\css\plugins\hover-effect\css\custom-hover-effects.css" />
+    <Content Include="assets\css\plugins\hover-effect\css\hover-min.css" />
+    <Content Include="assets\css\plugins\hover-effect\css\hover.css" />
+    <Content Include="assets\css\plugins\hover-effect\license.txt" />
+    <Content Include="assets\css\plugins\style-switcher.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\theme-colors\aqua.css" />
+    <Content Include="assets\css\theme-colors\blue.css" />
+    <Content Include="assets\css\theme-colors\brown.css" />
+    <Content Include="assets\css\theme-colors\dark-blue.css" />
+    <Content Include="assets\css\theme-colors\dark-red.css" />
+    <Content Include="assets\css\theme-colors\default.css" />
+    <Content Include="assets\css\theme-colors\light-green.css" />
+    <Content Include="assets\css\theme-colors\light.css" />
+    <Content Include="assets\css\theme-colors\orange.css" />
+    <Content Include="assets\css\theme-colors\purple.css" />
+    <Content Include="assets\css\theme-colors\red.css" />
+    <Content Include="assets\css\theme-colors\teal.css" />
+    <Content Include="assets\css\theme-skins\dark.css" />
+    <Content Include="assets\HtmlPage1.html" />
+    <Content Include="assets\img\icons\flat\01.png" />
+    <Content Include="assets\img\icons\flat\02.png" />
+    <Content Include="assets\img\icons\flat\03.png" />
+    <Content Include="assets\img\icons\social\amazon.png" />
+    <Content Include="assets\img\icons\social\behance.png" />
+    <Content Include="assets\img\icons\social\blogger.png" />
+    <Content Include="assets\img\icons\social\deviantart.png" />
+    <Content Include="assets\img\icons\social\dribbble.png" />
+    <Content Include="assets\img\icons\social\dropbox.png" />
+    <Content Include="assets\img\icons\social\evernote.png" />
+    <Content Include="assets\img\icons\social\facebook.png" />
+    <Content Include="assets\img\icons\social\forrst.png" />
+    <Content Include="assets\img\icons\social\github.png" />
+    <Content Include="assets\img\icons\social\googleplus.png" />
+    <Content Include="assets\img\icons\social\instagram.png" />
+    <Content Include="assets\img\icons\social\jolicloud.png" />
+    <Content Include="assets\img\icons\social\last-fm.png" />
+    <Content Include="assets\img\icons\social\linkedin.png" />
+    <Content Include="assets\img\icons\social\picasa.png" />
+    <Content Include="assets\img\icons\social\pintrest.png" />
+    <Content Include="assets\img\icons\social\rss.png" />
+    <Content Include="assets\img\icons\social\skype.png" />
+    <Content Include="assets\img\icons\social\spotify.png" />
+    <Content Include="assets\img\icons\social\stumbleupon.png" />
+    <Content Include="assets\img\icons\social\tumblr.png" />
+    <Content Include="assets\img\icons\social\twitter.png" />
+    <Content Include="assets\img\icons\social\vimeo.png" />
+    <Content Include="assets\img\icons\social\vk.png" />
+    <Content Include="assets\img\icons\social\wordpress.png" />
+    <Content Include="assets\img\icons\social\xing.png" />
+    <Content Include="assets\img\icons\social\yahoo.png" />
+    <Content Include="assets\img\icons\social\youtube.png" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\pages\index.js" />
+    <Content Include="assets\js\pages\page_contacts.js" />
+    <Content Include="assets\js\pages\page_contact_advanced.js" />
+    <Content Include="assets\js\pages\page_portfolio.js" />
+    <Content Include="assets\js\plugins\circles-master.js" />
+    <Content Include="assets\js\plugins\cube-portfolio-0.js" />
+    <Content Include="assets\js\plugins\cube-portfolio-10.js" />
+    <Content Include="assets\js\plugins\cube-portfolio.js" />
+    <Content Include="assets\js\plugins\datepicker.js" />
+    <Content Include="assets\js\plugins\fancy-box.js" />
+    <Content Include="assets\js\plugins\form-sliders.js" />
+    <Content Include="assets\js\plugins\ladda-buttons.js" />
+    <Content Include="assets\js\plugins\layer-slider.js" />
+    <Content Include="assets\js\plugins\masking.js" />
+    <Content Include="assets\js\plugins\owl-carousel.js" />
+    <Content Include="assets\js\plugins\owl-recent-works.js" />
+    <Content Include="assets\js\plugins\parallax-slider.js" />
+    <Content Include="assets\js\plugins\placeholder-IE-fixes.js" />
+    <Content Include="assets\js\plugins\revolution-slider.js" />
+    <Content Include="assets\js\plugins\style-switcher.js" />
+    <Content Include="assets\js\plugins\validation.js" />
+    <Content Include="assets\js\plugins\vector-map.js" />
+    <Content Include="assets\plugins\back-to-top.js" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\plugins\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\plugins\gmap\gmap.js" />
+    <Content Include="assets\plugins\html5shiv.js" />
+    <Content Include="assets\plugins\jquery.mixitup.min.js" />
+    <Content Include="assets\plugins\jquery.parallax.js" />
+    <Content Include="assets\plugins\jquery\jquery-migrate.js" />
+    <Content Include="assets\plugins\jquery\jquery-migrate.min.js" />
+    <Content Include="assets\plugins\jquery\jquery.js" />
+    <Content Include="assets\plugins\jquery\jquery.min.js" />
+    <Content Include="assets\plugins\line-icons\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="assets\plugins\line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="assets\plugins\line-icons\icons-lte-ie7.js" />
+    <Content Include="assets\plugins\line-icons\index.html" />
+    <Content Include="assets\plugins\line-icons\License.txt" />
+    <Content Include="assets\plugins\line-icons\line-icons.css" />
+    <Content Include="assets\plugins\line-icons\Readme.txt" />
+    <Content Include="assets\plugins\line-icons\style.css" />
+    <Content Include="assets\plugins\modernizr.custom.js" />
+    <Content Include="assets\plugins\parallax-slider\css\parallax-slider.css" />
+    <Content Include="assets\plugins\parallax-slider\img\1.png" />
+    <Content Include="assets\plugins\parallax-slider\img\arrows.png" />
+    <Content Include="assets\plugins\parallax-slider\img\bg-text.png" />
+    <Content Include="assets\plugins\parallax-slider\img\bg.jpg" />
+    <Content Include="assets\plugins\parallax-slider\img\html5andcss3.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-aqua.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-blue.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-brown.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-dark-blue.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-light-green.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-light.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-orange.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-purple.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading-red.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-heading.png" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\bg-text.png" />
+    <Content Include="assets\plugins\parallax-slider\js\jquery.cslider.js" />
+    <Content Include="assets\plugins\parallax-slider\js\modernizr.js" />
+    <Content Include="assets\plugins\respond.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\captcha\button.png" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\custom-sky-forms.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\demo.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\font-awesome.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-black.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-blue.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-green.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-ie8.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-orange.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-pink.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-purple.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-red.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms-yellow.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\css\sky-forms.css" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-checkout.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-login.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-order.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-reg.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-review.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-datepicker.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-grid.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-icons.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-masking.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-modal.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-slider.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-states-disabled.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-states-error.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-states-success.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-tooltips.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-validation.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\icons\fontawesome-webfont.svg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-black.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-blue.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-cyan.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-green.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-orange.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-pink.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-purple.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-red.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\img\bg-yellow.jpg" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery-ui.min.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery.form.min.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery.maskedinput.min.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery.min.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery.modal.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery.placeholder.min.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\jquery.validate.min.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\js\sky-forms-ie8.js" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-black.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-blue.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-cyan.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-green.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-orange.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-pink.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-purple.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-red.html" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\scheme-yellow.html" />
+    <Content Include="CSS\BookingButtons.css" />
+    <Content Include="CSS\CalendarIcons.css" />
+    <Content Include="CSS\JuniorBookingButtons.css" />
+    <Content Include="form2email\captcha.asp" />
+    <Content Include="form2email\default.asp" />
+    <Content Include="form2email\formmail.asp" />
+    <Content Include="Global.asax" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="img\adults-landscape6.jpg" />
+    <Content Include="img\adults-landscape1.jpg" />
+    <Content Include="img\adults-landscape2.jpg" />
+    <Content Include="img\adults-landscape3.jpg" />
+    <Content Include="img\adults-landscape4.jpg" />
+    <Content Include="img\adults-landscape5.jpg" />
+    <Content Include="img\adults-landscape7.jpg" />
+    <Content Include="img\advanced-adult-player.jpg" />
+    <Content Include="img\Aegon-schools-logo.jpg" />
+    <Content Include="img\aegon-team-tennis.jpg" />
+    <Content Include="img\ask-a-question.jpg" />
+    <Content Include="img\Autumn.jpg" />
+    <Content Include="img\beginner-adult-player.jpg" />
+    <Content Include="img\cardio tennis banner.jpg" />
+    <Content Include="img\cardio-tennis-logo.jpg" />
+    <Content Include="img\cardio tennis love fitness.jpg" />
+    <Content Include="img\cardio tennis love fitness2.png" />
+    <Content Include="img\cardio-tennis-resized.jpg" />
+    <Content Include="img\cardio-tennis.jpg" />
+    <Content Include="img\cardio2.jpg" />
+    <Content Include="img\cardio3.jpg" />
+    <Content Include="img\cardio3resized.jpg" />
+    <Content Include="img\coaches\George 872x724.png" />
+    <Content Include="img\coaches\Jimmy 872x724.png" />
+    <Content Include="img\coaches\Joe 872x724.png" />
+    <Content Include="img\coaches\Julia 872x724.png" />
+    <Content Include="img\coaches\Michael 872x724.png" />
+    <Content Include="img\coaches\Scott 872x724.png" />
+    <Content Include="img\coaching-tips.jpg" />
+    <Content Include="img\discount-picture.png" />
+    <Content Include="img\doubles-landscape1.jpg" />
+    <Content Include="img\doubles-landscape2.jpg" />
+    <Content Include="img\doubles-landscape3.jpg" />
+    <Content Include="img\doubles-landscape5.jpg" />
+    <Content Include="img\ersa-logo.jpg" />
+    <Content Include="img\feedback.jpg" />
+    <Content Include="img\group-coaching-adult.jpg" />
+    <Content Include="img\image on clothing.JPG" />
+    <Content Include="img\join-the-fun.jpg" />
+    <Content Include="img\JTennis_logo-horiz-small.png" />
+    <Content Include="img\JTennis_logo.jpg" />
+    <Content Include="img\JTennis_logo.png" />
+    <Content Include="img\junior-results.jpg" />
+    <Content Include="img\juniors-landscape1.jpg" />
+    <Content Include="img\juniors-landscape2.jpg" />
+    <Content Include="img\juniors-landscape3.jpg" />
+    <Content Include="img\juniors-landscape4.jpg" />
+    <Content Include="img\leaderawards.jpg" />
+    <Content Include="img\lots-of-balls-sized.jpg" />
+    <Content Include="img\LTA-logo.jpg" />
+    <Content Include="img\lyg.jpg" />
+    <Content Include="img\mini-green-image.jpg" />
+    <Content Include="img\mini-red-image.jpg" />
+    <Content Include="img\mini-orange-image.jpg" />
+    <Content Include="img\pdf-icon.jpg" />
+    <Content Include="img\performance1.jpg" />
+    <Content Include="img\performance2.jpg" />
+    <Content Include="img\performance3.jpg" />
+    <Content Include="img\performancetennis1.jpg" />
+    <Content Include="img\performancetennis2.jpg" />
+    <Content Include="img\performancetennis3.jpg" />
+    <Content Include="img\policies.jpg" />
+    <Content Include="img\racket-on-grass-sized.jpg" />
+    <Content Include="img\restringing.jpg" />
+    <Content Include="img\schoolspic1.jpg" />
+    <Content Include="img\schoolspic2.jpg" />
+    <Content Include="img\schoolspic3.jpg" />
+    <Content Include="img\Spring.jpg" />
+    <Content Include="img\Summer.jpg" />
+    <Content Include="img\sweatshirt.JPG" />
+    <Content Include="img\syllabus-juniors2.jpg" />
+    <Content Include="img\syllabus-juniors4.jpg" />
+    <Content Include="img\syllabus-juniors5.jpg" />
+    <Content Include="img\syllabus-juniors6.jpg" />
+    <Content Include="img\syllabus-minis1.jpg" />
+    <Content Include="img\syllabus-minis2.jpg" />
+    <Content Include="img\syllabus-minis3.jpg" />
+    <Content Include="img\syllabus-minis4.jpg" />
+    <Content Include="img\t-shirt.JPG" />
+    <Content Include="img\team-training-adult.jpg" />
+    <Content Include="img\tennisleaders2.jpg" />
+    <Content Include="img\tennisleadersphoto1.jpg" />
+    <Content Include="img\tennisleadersphoto2.jpg" />
+    <Content Include="img\tennisleadersphoto3.jpg" />
+    <Content Include="img\tots1.jpg" />
+    <Content Include="img\tots2.jpg" />
+    <Content Include="img\tots3.jpg" />
+    <Content Include="img\welcomepicture2.jpg" />
+    <Content Include="img\wigmore-clubhouse.jpg" />
+    <Content Include="img\wigmore-logo-blue.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdultsController.cs" />
+    <Compile Include="Controllers\CampsController.cs" />
+    <Compile Include="Controllers\CompeteController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JuniorsController.cs" />
+    <Compile Include="Controllers\OtherController.cs" />
+    <Compile Include="Controllers\CommunityController.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="Controllers\VenuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_LayoutPage.cshtml" />
+    <Content Include="Views\Home\Index_old.cshtml" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap.css.map" />
+    <Content Include="assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\plugins\jquery\jquery.min.map" />
+    <Content Include="assets\css\plugins\brand-buttons\.travis.yml" />
+    <Content Include="assets\css\plugins\brand-buttons\SASS\brand-buttons-inversed.scss" />
+    <Content Include="assets\css\plugins\brand-buttons\SASS\brand-buttons.scss" />
+    <Content Include="assets\css\plugins\brand-buttons\SASS\_mixins.scss" />
+    <Content Include="assets\css\plugins\brand-buttons\SASS\_variables.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_border-fade.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_box-shadow-inset.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_box-shadow-outset.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-bottom.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-float-bottom.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-float-left.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-float-right.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-float-top.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-left.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-right.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_bubble-top.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_curl-bottom-left.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_curl-bottom-right.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_curl-top-left.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_curl-top-right.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_float-shadow.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_float.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_glow.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_grow-rotate.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_grow.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_hang.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_hollow.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_hover-shadow.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_hover.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_outline-inward.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_outline-outward.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_pop.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_pulse-grow.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_pulse-shrink.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_pulse.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_push.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_rotate.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_round-corners.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_shadow-radial.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_shrink.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_sink.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_skew-forward.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_skew.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_trim.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_wobble-bottom.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_wobble-horizontal.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_wobble-top.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\effects\_wobble-vertical.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\hover.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\_defaults.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\_hacks.scss" />
+    <Content Include="assets\css\plugins\hover-effect\scss\_options.scss" />
+    <Content Include="Views\Adults\GroupProgramme.cshtml" />
+    <Content Include="Views\Adults\TeamTraining.cshtml" />
+    <Content Include="Views\Adults\Cardio.cshtml" />
+    <Content Include="Views\Adults\AdultDrillsAndTraining.cshtml" />
+    <Content Include="img\coaches\Thumbs.db" />
+    <Content Include="Views\Team\OurCoachingTeam.cshtml" />
+    <Content Include="Views\Camps\Dates.cshtml" />
+    <Content Include="Views\Camps\BookNow.cshtml" />
+    <Content Include="Views\Camps\FAQ.cshtml" />
+    <Content Include="Views\Camps\Schedule.cshtml" />
+    <Content Include="Views\Camps\About.cshtml" />
+    <Content Include="Views\Community\SchoolsProgramme.cshtml" />
+    <Content Include="Views\Juniors\MiniTennis.cshtml" />
+    <Content Include="img\Schools Our Schools Programme.docx" />
+    <Content Include="Views\Juniors\TermDates.cshtml" />
+    <Content Include="Views\Shared\_TopNavigation.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_JSSupport.cshtml" />
+    <Content Include="Views\Shared\_CSSSupport.cshtml" />
+    <Content Include="Views\Juniors\Terms.cshtml" />
+    <Content Include="Views\Camps\Terms.cshtml" />
+    <Content Include="Views\Adults\Terms.cshtml" />
+    <Content Include="Views\Adults\TermDates.cshtml" />
+    <Content Include="assets\plugins\parallax-slider\img\ie\Thumbs.db" />
+    <Content Include="assets\plugins\parallax-slider\img\Thumbs.db" />
+    <Content Include="assets\plugins\line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="assets\plugins\line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="assets\plugins\line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\captcha\font\anorexia.ttf" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\captcha\image.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\captcha\process.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-comment-process.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-comment.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-contacts-process.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-contacts.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-login-process.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-order-process.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\demo-review-process.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\ext-captcha.php" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\icons\fontawesome-webfont.eot" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\icons\fontawesome-webfont.ttf" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\icons\fontawesome-webfont.woff" />
+    <Content Include="assets\plugins\sky-forms\version-2.0.1\icons\FontAwesome.otf" />
+    <Content Include="img\LTA Rally Awards.pdf" />
+    <Content Include="form2email\setup_script.cgi" />
+    <Content Include="img\wigmore private lesson voucher2.docx" />
+    <Content Include="assets\downloads\Equality and Diversity Policy.pdf" />
+    <Content Include="assets\downloads\Recording and Publishing Images policy.pdf" />
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
+    <Content Include="Views\Adults\CourseSyllabus.cshtml" />
+    <Content Include="Views\Venues\Wigmore.cshtml" />
+    <Content Include="Views\Juniors\FAQ.cshtml" />
+    <Content Include="Views\Adults\FAQ.cshtml" />
+    <Content Include="Views\Other\Restringing.cshtml" />
+    <Content Include="Views\Juniors\CourseSyllabus.cshtml" />
+    <Content Include="Views\Juniors\BookNowSummer2015.cshtml" />
+    <Content Include="Views\Adults\BookNowSummer2015.cshtml" />
+    <Content Include="Views\Other\Recruitment.cshtml" />
+    <Content Include="Views\Other\About.cshtml" />
+    <Content Include="Views\Other\ContactUs.cshtml" />
+    <Content Include="Views\Juniors\Performance.cshtml" />
+    <Content Include="Views\Juniors\Tots.cshtml" />
+    <Content Include="Views\Juniors\Junior.cshtml" />
+    <Content Include="Views\Juniors\PrivateLessons.cshtml" />
+    <Content Include="Views\Juniors\TennisLeaders.cshtml" />
+    <Content Include="Views\Adults\PrivateLessons.cshtml" />
+    <Content Include="Views\Shared\_Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Other\Policies.cshtml" />
+    <Content Include="Views\Compete\Tournaments.cshtml" />
+    <Content Include="Views\Compete\Teams.cshtml" />
+    <Content Include="Views\Compete\Matchplay.cshtml" />
+    <Content Include="Views\Shop\Index.cshtml" />
+    <Content Include="Views\Other\Tips.cshtml" />
+    <Content Include="Views\Compete\Leagues.cshtml" />
+    <Content Include="Views\Other\Holidays.cshtml" />
+    <Content Include="Views\Community\LondonYouthGames.cshtml" />
+    <Content Include="Views\BookingForms\_Summer2015Juniors.cshtml" />
+    <Content Include="Views\BookingForms\_Summer2015mini.cshtml" />
+    <Content Include="Views\BookingForms\_Summer2015tots.cshtml" />
+    <Content Include="Views\Other\WaitingForm.cshtml" />
+    <Content Include="Views\Other\ContactUsResponse.cshtml" />
+    <Content Include="Views\Other\WaitingResponse.cshtml" />
+    <Content Include="Views\Other\MailingListResponse.cshtml" />
+    <Content Include="Views\BookingForms\_Summer2015Adults.cshtml" />
+    <Content Include="Views\BookingForms\_Summer2015Adultsgroup.cshtml" />
+    <Content Include="Views\BookingForms\_Summer2015Adultsteam.cshtml" />
+    <Content Include="Views\Other\BookingConfirmation.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>34002</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34002/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

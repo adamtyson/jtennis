@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "Tennis Leaders";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+
+<div class="container content">
+    <div class="row team margin-bottom-20">
+       
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/tennisleadersphoto1.jpg")" class="img-responsive">
+
+
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/tennisleadersphoto2.jpg")" class="img-responsive">
+
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/tennisleadersphoto3.jpg")" class="img-responsive">
+
+            </div>
+        </div>
+    </div>
+    <div class="row margin-bottom-40">
+        <div class="col-md-8 md-margin-bottom-40">
+            <h2>Tennis Leaders</h2>
+            <p>
+                The LTA Tennis Leaders Course is aimed at our older juniors (age 14+) who would like to support our team, either by assisting in our coaching sessions or at our Mini Tennis tournaments.
+            </p>
+            <p>
+                All Tennis Leaders will gain a recognized qualification and will receive a certificate and a T-shirt. They may be offered future work on our programme.
+            </p>
+
+            </p>
+            <h2>What will a Tennis Leader learn?</h2>
+            <ul class="list-unstyled">
+
+                <li>
+                    <i class="fa fa-check color-green"></i> Understand the basics of tennis; strokes, game formats and variations of the sport.
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i> Understand how these variations of the game are used to introduce tennis to people of all ages and abilities.
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i> Effective communication and organisation skills.
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Put your skills into practice on court – in warm up activities and on court drills
+                    </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	How to lead a practice session
+                    </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	How to help at a competition
+                    </li>
+</ul>
+           <h2>How to book a Tennis Leader's course </h2>
+            
+            <ul class="list-unstyled">
+                Our next 4 day course runs start on the Monday 26th October and finishes on Thursday 29th October 2015 at the following times:
+                 <li>
+                    <i class="fa fa-check color-green"></i> Monday 12pm - 3pm
+                <li>
+                    <i class="fa fa-check color-green"></i> Tuesday – 9.45-12.45pm
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i> Wednesday  - 12pm-3pm
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i> Thursday 9.45-12.45pm
+                </li>
+            </ul>
+           <p>
+               The cost is £60 for Wigmore members and £70 for non-members.
+           </p>
+
+        </div>
+
+        <div class="col-md-3 md-margin-bottom-40">
+            <div class="responsive-video">
+                <img src="@Url.Content("~/img/tennisleaders2.jpg")" />
+            </div>
+        </div>
+    </div><!--/row-->
+   
+
+    <div class="container">
+       
+            <h3 class="panel-title">Book now</h3>
+      
+        <table cellspacing="5" class="table table-striped">
+            <thead>
+                <tr>
+
+                    <th>Course description</th>
+                    <th>Wigmore Members booking</th>
+                    <th>Non members booking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td valign="top">Octboer 2015 Tennis Leaders</td>
+                    <td valign="top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="PWFAMAH3EQDMS">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Name of Participant">Name of Participant</td></tr>
+                                <tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </td>
+                    <td valign="top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="5TZLDJUG3AT3E">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Name of Participant">Name of Participant</td></tr>
+                                <tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </td>
+                </tr>
+        </table>
+    </div>
+</div>
+
+

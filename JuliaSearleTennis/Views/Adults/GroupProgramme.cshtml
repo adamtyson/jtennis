@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Adult Group Coaching Programme";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="row margin-bottom-40">
+        <div class="col-md-6 md-margin-bottom-40">
+            <h2>Adult Group Programme</h2>
+            <p>We offer a full coaching programme for players of all abilities</p>
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa fa-check color-green"></i>Maximum Ratio of 1:8
+                </li>
+               
+                <li>
+                    <i class="fa fa-check color-green"></i>	Technical and Tactical coaching
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	
+                    <a href="@Url.Action("CourseSyllabus", "Adults")#groupcoaching">Clear syllabus</a> and lesson structure
+                </li>
+
+           </ul>    
+
+
+                <!-- Blockquotes -->
+                <blockquote class="hero-unify">
+                    <p>Award winning tennis coaching. We bring a personal and effective approach to every player we work with, which is why.</p>
+                    <small>Founder Julia Searle</small>
+                </blockquote>
+        </div>
+      
+        <div class="col-md-6 md-margin-bottom-40">
+            <div class="thumbnail-style">
+                <img src="@Url.Content("~/img/adults-landscape6.jpg")" class="img-responsive" />    
+            </div>
+        </div>
+    </div><!--/row--><div class="row">
+
+    @Html.Partial("~/Views/BookingForms/_Summer2015adultsgroup.cshtml")
+
+</div>
+    <div class="row team margin-bottom-20">
+        <h2>What do our programmes consist of?</h2>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/beginner-adult-player.jpg")" class="img-responsive">
+
+                <h3>
+                   Beginners
+                </h3>
+              <i>Objective: To develop the necessary skills to be able to play and enjoy a game of tennis. </i>
+
+                <p>
+                    Perfect for a player who is new to the game and need to learn the basics or players who 
+                    have not played for a long time and need to brush up on the basics. Players will learn 
+                    sending and receiving skills, 
+                    as well as developing their hand eye co ordination, movement and balance. 
+                </p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/adults-landscape4.jpg")" class="img-responsive">
+                <h3>Improvers</h3>
+                <i>Objective: To gain confidence in playing singles and doubles matches at the club</i>
+                <p>
+                    Perfect for a player who attends or would like to attend social tennis sessions, or compete in the
+                     lower divisions of the club singles leagues. Players can already rally consistently from the baseline 
+                    and serve both serves over-arm consistently. Players will learn how to advance their 
+                    technique using spin and all sessions will relate to the tactics of the game.
+                </p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/advanced-adult-player.jpg")" class="img-responsive">
+                <h3>Advanced</h3>
+                
+                <i>Objective: To refine solid tennis technique and to improve tactically, physically and mentally.</i>
+                <p>
+                Perfect for a player who competes in a club team or in the higher divsions of the club singles league. 
+                    Sessions will be of a high intensity and look at most aspects of the game, tactics, fitness 
+                    and technique.
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+    <hr class="margin-bottom-40">
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->

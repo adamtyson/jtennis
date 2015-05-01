@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "MiniTennis";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+<link href="@Url.Content("~/CSS/JuniorBookingButtons.css")" rel="stylesheet" />
+<!--=== Content Part ===-->
+<div class="container content">
+    <div class="row margin-bottom-40">
+        <div class="col-md-6 md-margin-bottom-40">
+            <h2>Mini Tennis (age 5-11yrs)</h2>
+            <p>We offer a full Mini Tennis programme for children of all abilities</p>
+            <ul class="list-unstyled">
+                <li>
+                    Maximum Ratio of 1:8
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Different coloured balls and modified court sizes
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	ABCs development (Agility, Balance and Co-ordination)
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	Technical and Tactical coaching
+                </li>
+                <li>
+                    <i class="fa fa-check color-green"></i>	End-of-term certificates for everyone
+                </li>
+                </ul>
+
+
+                <!-- Blockquotes -->
+                <blockquote class="hero-unify">
+                    <p>Award winning tennis coaching. We bring a personal and effective approach to every player we work with, which is why.</p>
+                    <small>Founder Julia Searle</small>
+                </blockquote>
+        </div>
+
+        <div class="col-md-6 md-margin-bottom-40">
+            <div class="responsive-video">
+                <iframe width="854" height="510" src="https://www.youtube.com/embed/HEwRNmyt69o" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div><!--/row-->
+    <div class="row">
+
+        @Html.Partial("~/Views/BookingForms/_Summer2015mini.cshtml")
+
+    </div>
+    <div class="row team margin-bottom-20">
+        <h2>What is mini tennis?</h2>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/mini-red-image.jpg")" class="img-responsive">
+
+                <h3>
+                    Mini Tennis Red
+                </h3>
+               <i>(age 5-8yrs)</i>
+
+                <p>
+                    Mini red is an introduction to tennis, using light –weight rackets, sponge balls and a smaller court. A fun way to develop moving, hitting, throwing and catching skills and basic racket skills.
+                </p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/mini-orange-image.jpg")" class="img-responsive">
+                <h3>Mini Tennis Orange</h3>
+                <i>(age 8-9yrs)</i>
+                <p>
+                    Mini Orange is designed for beginners and improvers wanting to continue their tennis skills, rallying and serving using medium bounce balls and simple scoring.
+                </p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail-style">
+                <img alt="" src="@Url.Content("~/img/mini-green-image.jpg")" class="img-responsive">
+                <h3>Mini Tennis Green</h3>
+                <i>         (age 10-11yrs)</i>
+
+                <p>
+                    Mini Green is the final stage in preparing for full tennis, working on technique, tactics as well as fundamental athletic skills. The aim is to get players to rally from the baseline and use full tennis scoring.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
