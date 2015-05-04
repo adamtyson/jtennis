@@ -617,6 +617,7 @@
     <Content Include="Views\BookingForms\Autumn2015\_mini.cshtml" />
     <Content Include="Views\BookingForms\Autumn2015\_juniors.cshtml" />
     <Content Include="Views\BookingForms\Autumn2015\_adults.cshtml" />
+    <Content Include="Views\Adults\BookNowAutumn2015.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

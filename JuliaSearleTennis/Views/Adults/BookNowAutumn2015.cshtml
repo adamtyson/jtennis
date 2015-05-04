@@ -1,11 +1,9 @@
 ﻿@{
-    ViewBag.Title = "Junior Programme booking Autumn 2015";
+    ViewBag.Title = "Adult Programme booking Summer 2015";
     Layout = "~/Views/_LayoutPage.cshtml";
 }
 
 <link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
-<link href="@Url.Content("~/CSS/JuniorBookingButtons.css")" rel="stylesheet" />
-
 
 <div class="container content">
 
@@ -19,10 +17,14 @@
             Payment can be made using paypal or by using a debit or credit card.
         </p>
         <p>
-            If you are booking before the earlybird discount deadline (applies to the group programme only), your earlybird discount will be applied
+            If you are booking before the earlybird discount deadline, your earlybird discount will be applied
             automatically when you click "add to cart"
         </p>
-     
+        <p>
+            The cost of all 12 1-hour lessons is £120 for the term or £108 if you book before the 7th March.
+            <br />
+            If your are not a member of Wigmore Tennis Club, you will be charged an additional £30.00 guest fee.
+        </p>
     </div>
     <div>
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -33,50 +35,9 @@
         </form>
 
     </div>
-    <div class="row">
-        <div class="container">
-            <div class="tab-v1">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tots" data-toggle="tab">Tots</a></li>
-                    <li><a href="#mini" data-toggle="tab">Mini</a></li>
-                    <li><a href="#junior" data-toggle="tab">Junior</a></li>
-
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane fade in active" id="tots">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div>
-                                    @Html.Partial("~/Views/BookingForms/Autumn2015/_tots.cshtml")
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade in" id="mini">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div>
-                                    @Html.Partial("~/Views/BookingForms/Autumn2015/_mini.cshtml")
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="tab-pane fade in" id="junior">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div>
-                                    @Html.Partial("~/Views/BookingForms/Autumn2015/_Juniors.cshtml")
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        @Html.Partial("~/Views/BookingForms/Autumn2015/_adults.cshtml")
     </div>
 </div>
-  
+
 
