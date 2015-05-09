@@ -8,6 +8,10 @@ namespace JuliaSearleTennis.Controllers
 {
     public class AdultsController : Controller
     {
+        public ActionResult Booking()
+        {
+            return View();
+        }
         public ActionResult BookNowSummer2015()
         {
             return View();
