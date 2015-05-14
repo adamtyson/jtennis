@@ -287,6 +287,7 @@
     <Content Include="Views\_LayoutPage_NoFooter.cshtml" />
     <Content Include="Views\Booking\PrivateLessons.cshtml" />
     <Content Include="Views\Booking\TenLessons.cshtml" />
+    <Content Include="Views\Booking\Adults.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
