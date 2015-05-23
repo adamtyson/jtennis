@@ -169,6 +169,9 @@
     <Content Include="img\syllabus-minis4.jpg" />
     <Content Include="img\t-shirt.JPG" />
     <Content Include="img\team-training-adult.jpg" />
+    <Content Include="img\tenerife-at-night.jpg" />
+    <Content Include="img\tenerife-site-overview.jpg" />
+    <Content Include="img\tenerife-tennis-court.jpg" />
     <Content Include="img\tennisleaders2.jpg" />
     <Content Include="img\tennisleadersphoto1.jpg" />
     <Content Include="img\tennisleadersphoto2.jpg" />
@@ -230,6 +233,8 @@
     <Content Include="img\LTA Rally Awards.pdf" />
     <Content Include="form2email\setup_script.cgi" />
     <Content Include="img\wigmore private lesson voucher2.docx" />
+    <Content Include="img\Footwork checklist for a performance player.pdf" />
+    <Content Include="img\Tactical Checklist for a performance player.pdf" />
     <None Include="Properties\PublishProfiles\FTP.pubxml" />
     <Content Include="Views\Adults\CourseSyllabus.cshtml" />
     <Content Include="Views\Venues\Wigmore.cshtml" />
@@ -237,8 +242,6 @@
     <Content Include="Views\Adults\FAQ.cshtml" />
     <Content Include="Views\Other\Restringing.cshtml" />
     <Content Include="Views\Juniors\CourseSyllabus.cshtml" />
-    <Content Include="Views\Juniors\BookNowSummer2015.cshtml" />
-    <Content Include="Views\Adults\BookNowSummer2015.cshtml" />
     <Content Include="Views\Other\Recruitment.cshtml" />
     <Content Include="Views\Other\About.cshtml" />
     <Content Include="Views\Other\ContactUs.cshtml" />
@@ -259,16 +262,10 @@
     <Content Include="Views\Compete\Leagues.cshtml" />
     <Content Include="Views\Other\Holidays.cshtml" />
     <Content Include="Views\Community\LondonYouthGames.cshtml" />
-    <Content Include="Views\BookingForms\_Summer2015Juniors.cshtml" />
-    <Content Include="Views\BookingForms\_Summer2015mini.cshtml" />
-    <Content Include="Views\BookingForms\_Summer2015tots.cshtml" />
     <Content Include="Views\Other\WaitingForm.cshtml" />
     <Content Include="Views\Other\ContactUsResponse.cshtml" />
     <Content Include="Views\Other\WaitingResponse.cshtml" />
     <Content Include="Views\Other\MailingListResponse.cshtml" />
-    <Content Include="Views\BookingForms\_Summer2015Adults.cshtml" />
-    <Content Include="Views\BookingForms\_Summer2015Adultsgroup.cshtml" />
-    <Content Include="Views\BookingForms\_Summer2015Adultsteam.cshtml" />
     <Content Include="Views\Other\BookingConfirmation.cshtml" />
     <Content Include="Views\BookingForms\Autumn2015\_tots.cshtml" />
     <Content Include="Views\Juniors\BookNowAutumn2015.cshtml" />
