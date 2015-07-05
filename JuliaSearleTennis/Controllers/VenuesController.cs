@@ -13,5 +13,10 @@ namespace JuliaSearleTennis.Controllers
         {
             return View();
         }
+
+        public ActionResult Camber()
+        {
+            return View();
+        }
     }
 }

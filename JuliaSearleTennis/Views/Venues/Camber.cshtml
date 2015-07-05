@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Camber Tennis Club";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="container content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-9 md-margin-bottom-40">
+                <h2>Camber Tennis Club</h2>
+                <p>Camber is a friendly, welcoming tennis club and is situated opposite The Grove Tavern (Harvester restaurant) public house 50 metres from the traffic lights at the junction of Lordship Lane and Dulwich Common (South Circular)</p>
+                <ul class="list-unstyled">
+                    <li><i class="color-green fa fa-check"></i>3 outdoor floodlit courts</li>
+                    <li><i class="color-green fa fa-check"></i>Aegon and Surrey league teams</li>
+                    <li><i class="color-green fa fa-check"></i>‘Club-Play’ twice a week on a Thursday evening and Sunday afternoon, during which members of all standards mix in together for a light hearted and fun session</li>
+                    <li><i class="color-green fa fa-check"></i>Club house - brand new refit for 2015</li>
+                    <li><i class="color-green fa fa-check"></i>Camber is proud to be the first and only venue to offer regular wheelchair tennis in any of the three South London boroughs of Southwark, Lambeth or Lewisham</li>
+</ul>
+                <h2>Camber membership</h2>
+                <p>Children membership starts from £25 per year.
+                <br />
+                   Adult membership ranges from £99.00 for students to £198.00 for full membership.  
+                                     <br />
+                   For more information <a href="http://www.tennis-at-camber.org/membership-2/"> see the Camber website</a>
+                </p>
+            </div>
+            <div class="col-md-3 md-margin-bottom-40">
+                <div class="thumbnail-style">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Basic Map --><div class="thumbnail-style">
+        <div class="headline"><h3>Map</h3></div>
+                          <p>
+
+                              <img src="~/img/camber-top-banner-2015.jpg" style="height:50px;" class="img-responsive" />
+                              Camber Lawn Tennis Club,<br />
+                              Clubmark Accredited,<br />
+                              Dulwich Common,<br />
+                              London, SE21 7EX<br />
+                              020 8693 2459<br />
+                              <a class="rounded-x" href="http://www.tennis-at-camber.org/">http://www.tennis-at-camber.org/</a>
+                          </p>
+    </div>
+   
+    <div id="map" class="map margin-bottom-50"></div>
+    <!-- End Basic Map -->
+    <!-- Panorama Map -->
+   
+    <!-- End Panorama Map -->
+</div>
+
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="@Url.Content("~/assets/plugins/gmap/gmap.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/assets/js/pages/page_contacts.js")"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        ContactPage.initMapCamber();
+        ContactPage.initPanoramaCamber();
+
+    });
+</script>
+
+
+
+
+
+
+
