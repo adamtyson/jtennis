@@ -27,17 +27,19 @@
                                 <thead>
                                     <tr>
                                         <th>Coach</th>
+                                        <th>Venue availability</th>
                                         <th>1 hour * (1-2 players)</th>
                                         <th>1 hour (3-4 players) </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>Julia	</td><td>£30</td><td>£35</td></tr>
-                                    <tr><td>Michael	</td><td>£25</td><td>£35</td></tr>
-                                    <tr><td>Joe	    </td><td>£25</td><td>£35</td></tr>
-                                    <tr><td>Jimmy	</td><td>£25</td><td>£35</td></tr>
-                                    <tr><td>George	</td><td>£25</td><td>£35</td></tr>
-                                    <tr><td>Scott	</td><td>£25</td><td>£35</td></tr>
+                                    <tr><td>Julia	 </td><td>Camber / Wigmore</td><td>£30</td><td>£35</td></tr>
+                                    <tr><td>Michael	 </td><td>Camber</td><td>£25</td><td>£35</td></tr>
+                                    <tr><td>Joe	     </td><td>Wigmore</td><td>£25</td><td>£35</td></tr>
+                                    <tr><td>Jimmy	 </td><td>Wigmore</td><td>£25</td><td>£35</td></tr>
+                                    <tr><td>George	 </td><td>Wigmore</td><td>£25</td><td>£35</td></tr>
+                                    <tr><td>Scott	 </td><td>Wigmore</td><td>£25</td><td>£35</td></tr>
+                                    <tr><td>Alejandro</td><td>Wigmore</td><td>£25</td><td>£35</td></tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
@@ -59,8 +61,13 @@
                         <div class="panel-body">
                             <p>
                                 <a href="@Url.Action("PrivateLessons","Booking")"
-                                   class="Yellow">BOOK A PRIVATE LESSON NOW</a>
+                                   class="Yellow">BOOK A PRIVATE LESSON AT WIGMORE NOW</a>
                             </p>
+                            <p>
+                                <a href="@Url.Action("PrivateLessons","BookingCamber")"
+                                   class="Yellow">BOOK A PRIVATE LESSON AT CAMBER NOW</a>
+                            </p>
+
                             <p>
                                 <h3>Special Offer</h3>
                                 Save £20 if you buy a package of 10 lessons.

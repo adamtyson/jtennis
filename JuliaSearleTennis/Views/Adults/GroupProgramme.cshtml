@@ -4,6 +4,7 @@
     Layout = "~/Views/_LayoutPage.cshtml";
 }
 <link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
+<link href="@Url.Content("~/CSS/JuniorBookingButtons.css")" rel="stylesheet" />
 <!--=== Content Part ===-->
 <div class="container content">
     <div class="row margin-bottom-40">
@@ -20,7 +21,7 @@
                 </li>
                 <li>
                     <i class="fa fa-check color-green"></i>	
-                    <a href="@Url.Action("CourseSyllabus", "Adults")#groupcoaching">Clear syllabus</a> and lesson structure
+                    <a href="@Url.Action("CourseSyllabus", "Adults")#groupcoaching"><span style="color:#3498db;">Clear syllabus</span></a> and lesson structure
                 </li>
 
            </ul>    
