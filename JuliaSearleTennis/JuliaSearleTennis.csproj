@@ -89,6 +89,7 @@
     <Content Include="form2email\formmail.asp" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="img\coaches\20150723-al.jpg" />
     <Content Include="img\adults-landscape6.jpg" />
     <Content Include="img\adults-landscape1.jpg" />
     <Content Include="img\adults-landscape2.jpg" />
