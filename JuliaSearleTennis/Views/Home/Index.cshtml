@@ -102,30 +102,30 @@
                     <h3><a class="hover-effect" href="#">Receive our latest offers and information</a></h3>
 
 
-                   
-                        <form class="sky-form" action="~/form2email/formmail.asp" method="post" id="sky-form3">
-                            <input name="recipients_old" type="hidden" value="info&#64;\\web-123win\winpackage23\tenniscoaching.london\www.tenniscoaching.london\web\content\form2email\setup_script.cgi" />
 
-                            <input type="hidden" name="_recipients" value="juliasearle31@gmail.com" />
-                           
-                            <input name="_envars" type="hidden" value="HTTP_USER_AGENT,REMOTE_ADDR" />
-                           
-                            <input type="hidden" name="_redirectUrl" value="@Url.Action("MailingListResponse", "Other")" />
+                    <form class="sky-form" action="~/form2email/formmail.asp" method="post" id="register-form" novalidate="novalidate">
+                        <input name="recipients_old" type="hidden" value="info&#64;\\web-123win\winpackage23\tenniscoaching.london\www.tenniscoaching.london\web\content\form2email\setup_script.cgi" />
 
-                            <fieldset>
-                                <section>
-                                    <header>
-                                        Newsletter
-                                    </header>
-                                    <label class="label">Email</label>
-                                    <label class="input">
-                                        <input type="email">
-                                    </label>
-                                    <input type="hidden" name="subject" value="Add me to your mailing list please" />
-                                    <input type="submit" class="btn-u btn-u-default" value="Submit"/>
-                                </section>
-                            </fieldset>
-                        </form>
+                        <input type="hidden" name="_recipients" value="juliasearle31@gmail.com" />
+
+                        <input name="_envars" type="hidden" value="HTTP_USER_AGENT,REMOTE_ADDR" />
+
+                        <input type="hidden" name="_redirectUrl" value="@Url.Action("MailingListResponse", "Other")" />
+
+                        <fieldset>
+                            <section>
+                                <header>
+                                    Newsletter
+                                </header>
+                                <label class="label">Email</label>
+                                <label class="input">
+                                    <input type="email" name="email">
+                                </label>
+                                <input type="hidden" name="subject" value="Add me to your mailing list please" />
+                                <input type="submit" class="btn-u btn-u-default" value="Submit" />
+                            </section>
+                        </fieldset>
+                    </form>
 
                 </div>
             </div>
@@ -148,7 +148,7 @@
             <div class="thumbnails thumbnail-style thumbnail-kenburn">
                 <div class="thumbnail-img">
                     <div class="overflow-hidden">
-                        <img class="img-responsive" src="@Url.Content("/img/coaching-tips.jpg")" " alt=" ">
+                        <img class="img-responsive" src="@Url.Content("/img/coaching-tips.jpg")" alt=" ">
                     </div>
                     <a class="btn-more hover-effect" href="@Url.Action("Holidays","Other")">read more +</a>
                 </div>
@@ -162,3 +162,41 @@
 
 </div>
 <!--=== End Content Part ===-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="~/scripts/jquery.validate.min.js"></script>
+
+<script>
+    (function ($, W, D) {
+        var JQUERY4U = {};
+
+        JQUERY4U.UTIL =
+        {
+            setupFormValidation: function () {
+                //form validation rules
+                $("#register-form").validate({
+                    rules: {
+
+                        email: {
+                            required: true,
+                            email: true
+                        },
+
+                    },
+                    messages: {
+
+                        email: "Please enter a valid email address"
+                    },
+                    submitHandler: function (form) {
+                        form.submit();
+                    }
+                });
+            }
+        }
+
+        //when the dom has loaded setup form validation rules
+        $(D).ready(function ($) {
+            JQUERY4U.UTIL.setupFormValidation();
+        });
+
+    })(jQuery, window, document);
+</script>
