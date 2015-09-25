@@ -8,7 +8,7 @@ namespace JuliaSearleTennis.Controllers
 {
     public class CampsController : Controller
     {
-        public ActionResult About()
+        public ActionResult Index()
         {
             return View();
         }

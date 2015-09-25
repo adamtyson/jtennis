@@ -222,7 +222,7 @@
     <Content Include="Views\Camps\BookNow.cshtml" />
     <Content Include="Views\Camps\FAQ.cshtml" />
     <Content Include="Views\Camps\Schedule.cshtml" />
-    <Content Include="Views\Camps\About.cshtml" />
+    <Content Include="Views\Camps\Index.cshtml" />
     <Content Include="Views\Community\SchoolsProgramme.cshtml" />
     <Content Include="Views\Juniors\MiniTennis.cshtml" />
     <Content Include="img\Schools Our Schools Programme.docx" />
