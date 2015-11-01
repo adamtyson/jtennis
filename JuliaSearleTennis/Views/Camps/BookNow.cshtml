@@ -2,18 +2,7 @@
     ViewBag.Title = "Holiday Camp Bookings";
     Layout = "~/Views/_LayoutPage.cshtml";
 }
-<style>
-    .halfday {
-        float: left;
-        padding-right: 50px;
-        min-width: 350px;
-    }
-
-    .fullday {
-        float: left;
-    }
-</style>
-
+<link href="@Url.Content("~/CSS/BookingButtons.css")" rel="stylesheet" />
 
 <!--=== Content Part ===-->
 <div class="container content">
@@ -22,203 +11,140 @@
     <div class="headline"><h2>How to book a camp place</h2></div>
 
     <div class="row">
+        <h2>Package</h2>
+        <p>
+            There are a limited number of packages available with 10% off, available to the first 50 people who book.
+            <br />Buy 10 full days of camp, and pay only £22 per day (a saving of £60), or 10 half days of camp, and pay only £12 per morning (a saving of £40)!! Days do not need to be consecutive, and can be taken any time during 2016. They cannot be rolled over to 2017.
+            <br />
+            You can select your 10 dates at the time of booking, or at a later stage, however please note that we only have a limited number of places at the camp so please book early to avoid disappointment.
+            <a href="https://app.acuityscheduling.com/catalog.php?owner=11441442" class="Yellow">Book package</a>
+        </p>
 
         <p>
-            Please click below on the camp that you wish to book for (you can book for more than one
-            week at a time), and select the session or sessions that you wish to attend.
-            Payment can be made using paypal or by using a debit or credit card.
+
         </p>
-        <p>
-            If you are booking before the earlybird discount deadline, your 20% discount will be applied
-            automatically when you click "add to cart"
-        </p>
-      
-    </div>
-    <div>
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCMgZODe54krdyHijWvWt3HRQNDf3GiEf6DCNjSRb3EiF7whK3G6fuNHXlkUyUvdGSfWzwImSESPjRlXi2rEgZxRK9I+/H37LpbRix4Lg0lXWakAkJkIMbmSTcX1Z37z8nVBUYBJnlC3YmwuefqBErlJD4rDpdE+/FKckSu4G9XLTELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAi8AhfdFI7xE4AwF3+9L4/lTs04yZdKdI/zKTez5kd44wkNIHSBtD9X39acqZqkmZbOZauU9BGt8BPLoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTUwMjIzMTU0NzIzWjAjBgkqhkiG9w0BCQQxFgQUvMGe+b7Zu705O30RW1GGK9mT8G8wDQYJKoZIhvcNAQEBBQAEgYBDVWtoqeoyo/MoSGrTL1CGiZegol1Z7zA21Ed1RZLdDyug+DUntc51p+9MJcX1xpJnSirnzm64gF3WD4ta6IvXQcYnrlattNCTI/bzS+N7YzpEk5A+JVoSFmv41etwtiV0Mrenjtilhji+ItkZcYo9wOn6W7DlYiczGR1VVQz0ug==-----END PKCS7-----">
-            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-        </form>
-
-    </div>
-  
-    <div class="container">
-        <h2>Camp 14: Half term WIGMORE</h2>
-        <div class="halfday">
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="57KFR4BPM7HFL">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Monday 19th October Wigmore HALF DAY BOOKINGS</td></tr>
-                    <tr>
-                        <td>
-                            <select name="os0">
-                                <option value="Monday-Friday 10am-12.30pm">Monday-Friday 10am-12.30pm £60.00 GBP</option>
-                                <option value="Monday only 10am-12.30pm">Monday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Tuesday only 10am-12.30pm">Tuesday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Wednesday only 10am-12.30pm">Wednesday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Thursday only 10am-12.30pm">Thursday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Friday only 10am-12.30pm">Friday only 10am-12.30pm £16.00 GBP</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td><input type="hidden" name="on1" value="Child's Name and Date of Birth">Child's Name and Date of Birth</td></tr>
-                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="GBP">
-                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
-        <div class="fullday">
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="HT7HBPUZU23DS">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Monday 19th October Wigmore FULL DAY BOOKINGS</td></tr>
-                    <tr>
-                        <td>
-                            <select name="os0">
-                                <option value="Monday-Friday 10am-3pm">Monday-Friday 10am-3pm £110.00 GBP</option>
-                                <option value="Monday only 10am-3pm">Monday only 10am-3pm £28.00 GBP</option>
-                                <option value="Tuesday only 10am-3pm">Tuesday only 10am-3pm £28.00 GBP</option>
-                                <option value="Wednesday only 10am-3pm">Wednesday only 10am-3pm £28.00 GBP</option>
-                                <option value="Thursday only 10am-3pm">Thursday only 10am-3pm £28.00 GBP</option>
-                                <option value="Friday only 10am-3pm">Friday only 10am-3pm £28.00 GBP</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td><input type="hidden" name="on1" value="Child's Name and Date of Birth">Child's Name and Date of Birth</td></tr>
-                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="GBP">
-                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-
-            </form>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Camp 15: Half term - Camber</h2>
-        <div class="halfday">
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="LRNTQ6RRVCHTA">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Monday 26th October Camber HALF DAY BOOKINGS</td></tr>
-                    <tr>
-                        <td>
-                            <select name="os0">
-                                <option value="Monday-Friday 10am-12.30pm">Monday-Friday 10am-12.30pm £60.00 GBP</option>
-                                <option value="Monday only 10am-12.30pm">Monday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Tuesday only 10am-12.30pm">Tuesday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Wednesday only 10am-12.30pm">Wednesday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Thursday only 10am-12.30pm">Thursday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Friday only 10am-12.30pm">Friday only 10am-12.30pm £16.00 GBP</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td><input type="hidden" name="on1" value="Child's Name and Date of Birth">Child's Name and Date of Birth</td></tr>
-                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="GBP">
-                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form>
-
-
-
-        </div>
-        <div class="fullday">
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="4VVZYY5VWSYH2">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Monday 26th October Camber FULL DAY BOOKINGS</td></tr>
-                    <tr>
-                        <td>
-                            <select name="os0">
-                                <option value="Monday-Friday 10am-3pm">Monday-Friday 10am-3pm £110.00 GBP</option>
-                                <option value="Monday only 10am-3pm">Monday only 10am-3pm £28.00 GBP</option>
-                                <option value="Tuesday only 10am-3pm">Tuesday only 10am-3pm £28.00 GBP</option>
-                                <option value="Wednesday only 10am-3pm">Wednesday only 10am-3pm £28.00 GBP</option>
-                                <option value="Thursday only 10am-3pm">Thursday only 10am-3pm £28.00 GBP</option>
-                                <option value="Friday only 10am-3pm">Friday only 10am-3pm £28.00 GBP</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td><input type="hidden" name="on1" value="Child's Name and Date of Birth">Child's Name and Date of Birth</td></tr>
-                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="GBP">
-                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form>
-
-        </div>
 
     </div>
 
-    <div class="container">
-        <h2>Camp 15: Half term - WIGMORE</h2>
-        <div class="halfday">
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="LM8FYMXCZ5ACN">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Monday 26th October Wigmore HALF DAY BOOKINGS</td></tr>
-                    <tr>
-                        <td>
-                            <select name="os0">
-                                <option value="Monday-Friday 10am-12.30pm">Monday-Friday 10am-12.30pm £60.00 GBP</option>
-                                <option value="Monday only 10am-12.30pm">Monday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Tuesday only 10am-12.30pm">Tuesday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Wednesday only 10am-12.30pm">Wednesday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Thursday only 10am-12.30pm">Thursday only 10am-12.30pm £16.00 GBP</option>
-                                <option value="Friday only 10am-12.30pm">Friday only 10am-12.30pm £16.00 GBP</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td><input type="hidden" name="on1" value="Child's Name and Date of Birth">Child's Name and Date of Birth</td></tr>
-                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="GBP">
-                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
-        <div class="fullday">
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="DNZT7BQWSYAGJ">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Monday 26th October Wigmore FULL DAY BOOKINGS</td></tr>
-                    <tr>
-                        <td>
-                            <select name="os0">
-                                <option value="Monday-Friday 10am-3pm">Monday-Friday 10am-3pm £110.00 GBP</option>
-                                <option value="Monday only 10am-3pm">Monday only 10am-3pm £28.00 GBP</option>
-                                <option value="Tuesday only 10am-3pm">Tuesday only 10am-3pm £28.00 GBP</option>
-                                <option value="Wednesday only 10am-3pm">Wednesday only 10am-3pm £28.00 GBP</option>
-                                <option value="Thursday only 10am-3pm">Thursday only 10am-3pm £28.00 GBP</option>
-                                <option value="Friday only 10am-3pm">Friday only 10am-3pm £28.00 GBP</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td><input type="hidden" name="on1" value="Child's Name and Date of Birth">Child's Name and Date of Birth</td></tr>
-                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="GBP">
-                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
+
+    <div class="row">
+        <h2>Booking individual sessions</h2>
+        <p>Sessions can be booked individually, please choose from the buttons below to book the camp place you require</p>
+        <table cellspacing="5" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>2016 Wigmore camps</th>
+                    <th>2016 Camber classes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Full+Day+Camps%3A+Spring+Half+Term">
+                                    Spring half term - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="http://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Half+Day+Camps%3A+Spring+Half+Term">
+                                    Spring half term - half days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="http://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Full+Day+Camps%3A+Easter">
+                                    Easter - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="httphttps://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Half+Day+Camps%3A+Easter">
+                                    Easter - half days
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Full+Day+Camps%3A+Summer+Half+Term">
+                                    Summer half term - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Half+Day+Camps%3A+Summer+Half+Term">
+                                    Summer half term - half days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Full+Day+Camps%3A+Summer">
+                                    Summer - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Half+Day+Camps%3A+Summer">
+                                    Summer - half days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Full+Day+Camps%3A+Autumn+Half+Term">
+                                    Autumn half term - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="httpshttps://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Wigmore+Half+Day+Camps%3A+Autumn+Half+Term">
+                                    Autumn half term - half days
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="Yellow" href="http://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Full+Day+Camps%3A+Easter">
+                                    Easter - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="httphttps://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Half+Day+Camps%3A+Easter">
+                                    Easter - half days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Full+Day+Camps%3A+Summer+Half+Term">
+                                    Summer half term - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Half+Day+Camps%3A+Summer+Half+Term">
+                                    Summer half term - half days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Full+Day+Camps%3A+Summer">
+                                    Summer - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Half+Day+Camps%3A+Summer">
+                                    Summer - half days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="https://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Full+Day+Camps%3A+Autumn+Half+Term">
+                                    Autumn half term - full days
+                                </a>
+                            </li>
+                            <li>
+                                <a class="Yellow" href="httpshttps://tenniscoaching.acuityscheduling.com/schedule.php?appointmentType=category:Camber+Half+Day+Camps%3A+Autumn+Half+Term">
+                                    Autumn half term - half days
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
     </div>
+
 </div>
 
 
