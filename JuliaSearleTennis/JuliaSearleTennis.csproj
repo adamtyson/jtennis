@@ -113,7 +113,9 @@
     <Content Include="img\cardio2.jpg" />
     <Content Include="img\cardio3.jpg" />
     <Content Include="img\cardio3resized.jpg" />
+    <Content Include="img\coaches\amy2.jpg" />
     <Content Include="img\coaches\amy.jpg" />
+    <Content Include="img\coaches\Ava.jpg" />
     <Content Include="img\coaches\George 872x724.png" />
     <Content Include="img\coaches\Jimmy 872x724.png" />
     <Content Include="img\coaches\Joe 872x724.png" />
@@ -302,6 +304,7 @@
     <Content Include="Views\BookingForms\Spring2016\_mini.cshtml" />
     <Content Include="Views\BookingForms\Spring2016\_tots.cshtml" />
     <Content Include="Views\BookingCamber\Adults.cshtml" />
+    <Content Include="Views\Other\BookSpring2016.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
