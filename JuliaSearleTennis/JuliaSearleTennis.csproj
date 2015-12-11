@@ -256,7 +256,6 @@
     <Content Include="Views\Juniors\Junior.cshtml" />
     <Content Include="Views\Juniors\PrivateLessons.cshtml" />
     <Content Include="Views\Juniors\TennisLeaders.cshtml" />
-    <Content Include="Views\Adults\PrivateLessons.cshtml" />
     <Content Include="Views\Shared\_Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Other\Policies.cshtml" />

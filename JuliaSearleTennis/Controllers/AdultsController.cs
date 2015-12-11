@@ -37,11 +37,6 @@ namespace JuliaSearleTennis.Controllers
             return View();
         }
 
-         public ActionResult PrivateLessons()
-        {
-            return View();
-        }
-
         public ActionResult TeamTraining()
         {
             return View();

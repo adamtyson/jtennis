@@ -46,7 +46,7 @@ namespace JuliaSearleTennis.Controllers
 
         public ActionResult PrivateLessons()
         {
-            return View("~/Views/Adults/PrivateLessons.cshtml");
+            return View();
         }
         public ActionResult TermDates()
         {
