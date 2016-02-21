@@ -297,10 +297,10 @@
     <Content Include="Views\BookingCamber\Orange.cshtml" />
     <Content Include="Views\BookingCamber\Juniors.cshtml" />
     <Content Include="Views\BookingCamber\Tots.cshtml" />
-    <Content Include="Views\BookingForms\Spring2016\_adults.cshtml" />
-    <Content Include="Views\BookingForms\Spring2016\_juniors.cshtml" />
-    <Content Include="Views\BookingForms\Spring2016\_mini.cshtml" />
-    <Content Include="Views\BookingForms\Spring2016\_tots.cshtml" />
+    <Content Include="Views\BookingForms\Summer2016\_adults.cshtml" />
+    <Content Include="Views\BookingForms\Summer2016\_juniors.cshtml" />
+    <Content Include="Views\BookingForms\Summer2016\_mini.cshtml" />
+    <Content Include="Views\BookingForms\Summer2016\_tots.cshtml" />
     <Content Include="Views\BookingCamber\Adults.cshtml" />
     <Content Include="Views\Other\BookSpring2016.cshtml" />
     <None Include="Web.Debug.config">
