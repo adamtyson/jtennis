@@ -1,4 +1,5 @@
-﻿@{
+﻿@using System.Security.Policy
+@{
     ViewBag.Title = "Our Academy";
     Layout = "~/Views/_LayoutPage.cshtml";
 }
@@ -16,17 +17,29 @@
             </div>
 
 
-
             <p>
-                After a successful launch of our mini tennis academy in September 2015, Wigmore is expanding its performance programme to include yellow ball juniors aged 11 to 17.
-               <br />
-                Twice weekly Junior squad training is provided for 14 and under players and 18 and under players who meet the minimum playing level. Most squad players should attend twice per week, although an option is available for those who wish to play once per week.
-                <br />
-                Our Junior Academy is for the most committed tennis players at the club. Training is provided 5 times per week (2 hours each time), and players must commit to a minimum of three times per week.
+                Entry into the performance programme is by invitation only and players
+                must fulfil additonal criteria depending on the path they choose to take.
+                <br/>
+                Our performance programme runs on a not for profit basis, ensuring we
+                provide access to the best possible coaching in the most affordable way
+                possible.
+            </p>
+            <p>
 
-                All players in our performance programme are expected 
+                Wigmore is expanding its performance programme options for yellow ball juniors
+                aged 11 to 17.
+                <br/>
+                Twice weekly Junior squad training is provided for 14 and under players and 18 and under players who meet the minimum playing level.<br/>
+                Most squad players should attend twice per week, although an option is available for those who wish to play once per week.
+                <br/>
+                We are also starting a Junior Academy for the most committed and talented tennis players at the club.
+                <br/>
+                Training for the junior academy is provided 5 times per week (2 hours each time), and players must
+                commit to a minimum of three times per week.
 
             </p>
+            
         </div>
     </div>
         
@@ -45,8 +58,8 @@
                                 <p>
                                     <h2>What is the Academy Package?</h2>
                                     <ul class="list-unstyled">
-                                        The package costs £160 for the Spring Term and includes the following:
-                                        <li><i class="fa fa-check color-green"></i>	2 x 1.5 hr squads per week (total of 30 hours training)</li>
+                                        The package costs £204.50 for the Summer Term 2016 and includes the following:
+                                        <li><i class="fa fa-check color-green"></i>	2 x 1.5 hr squads per week (total of 36 hours training)</li>
                                         <li><i class="fa fa-check color-green"></i>	2 x Academy T-Shirt (in grey)</li>
                                         <li><i class="fa fa-check color-green"></i>	1 x Academy Sweatshirt (in grey)</li>
                                         <li><i class="fa fa-check color-green"></i>	1 x Skipping rope      </li>
@@ -101,10 +114,10 @@
                                 <a href="@Url.Content("~/img/Tactical Checklist for a performance player.pdf")">Tactical Checklist for a Wigmore Academy player (pdf)</a>
 
                             </div>
-                            <div class="col-md-3">
+                           
                                 <!-- Contacts -->
                                 <div class="headline"><h2>Joining</h2></div>
-                                <a href="https://payableform.appspot.com/forms/q1jon">Book for Spring Term 2016</a>
+                                <a href="https://payableform.appspot.com/forms/pdbd5 ">Book for Summer Term 2016</a>
                                 <p>
                                     If you would like to be considered for the academy please contact
                                     <ul class="list-unstyled who margin-bottom-30">
@@ -115,14 +128,27 @@
                                 </p>
                                 <img class="img-responsive" src="@Url.Content("~/img/JTennis_logo.jpg")" alt="" />
 
-                            </div>
+                            
                         </div>
 
 
 
                         <div class="tab-pane fade in" id="squad">
                             <div class="row">
-                                squad
+                                <p>
+                                    The cost of one squad per week (1.5 hours) is £195.
+                                    <br/>The cost of two squads per week (3 hours) £290.
+
+                                    <br/>(10% early booking discount is available for both these squad options).
+                                    <h2>Schedule</h2>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check color-green"></i> Tuesday 5pm-6.30pm 14&U</li>
+                                        <li><i class="fa fa-check color-green"></i> Tuesdays 6.30pm-8pm 18&U</li>
+                                        <li><i class="fa fa-check color-green"></i> Thursdays 5pm-6.30pm 14&U</li>
+                                        <li><i class="fa fa-check color-green"></i> Saturdays 5pm-6.30pm 18&U</li>
+                                    </ul>
+                                </p>
+                                <a href="@Url.Action("JuniorSquad","Booking")" class="Yellow">Book a squad (invitation only)</a>
                             </div>
                         </div>
 
@@ -130,7 +156,52 @@
 
                         <div class="tab-pane fade in" id="juniorperformance">
                             <div class="row">
-                                junior performance
+                                <p>
+                                    <h2>What is the junior performance academy package?</h2>
+                                    <ul class="list-unstyled">
+                                        The 6 hours per week package (3 days) costs £585.00 for the Summer Term.
+                                        The unlimited package costs £750.00 for the Summer Term.
+
+                                        <li><i class="fa fa-check color-green"></i>	3 x 2hr squads per week (total of 72 hours training)</li>
+                                        <li><i class="fa fa-check color-green"></i>	2 x Academy T-Shirt (in grey)</li>
+                                        <li><i class="fa fa-check color-green"></i>	1 x Academy Sweatshirt (in grey)</li>
+                                        <li><i class="fa fa-check color-green"></i>	1 x Skipping rope      </li>
+                                        <li><i class="fa fa-check color-green"></i>	1 x Player Notebook* (players will record what they have learned, their goals, match results & who they have played, match tactics and the strengths/weaknesses of their opponents).  </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <h2> What is the schedule?</h2>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check color-green"></i>	Mondays 5pm-7pm</li>
+                                        <li><i class="fa fa-check color-green"></i>	Tuesdays 6pm-8pm</li>
+                                        <li><i class="fa fa-check color-green"></i>	Wednesdays 5pm-6pm</li>
+                                        <li><i class="fa fa-check color-green"></i>	Thursdays 5pm-6pm</li>
+                                        <li><i class="fa fa-check color-green"></i> Fridays 5pm-6pm</li>
+                                    </ul>
+                                </p>
+                                
+                                    <h2>What is an academy player?</h2>
+                                <p>
+                                    For yellow ball players targeting a career as a tennis playing professional.
+                                    They will be aiming to achieve a good national level ranking at a
+                                    minimum and have aspirations for much higher.
+                                    <br/>
+                                    Participants will be expected to train 5 times a week.
+                                </p>
+                                <div class="headline"><h2>Joining</h2></div>
+                                <a href="https://payableform.appspot.com/forms/pdbbg ">Book for Summer Term 2016</a>
+                                <p>
+                                    If you would like to be considered for the academy please contact
+                                    <ul class="list-unstyled who margin-bottom-30">
+                                        <li><a href="#"><i class="fa fa-home"></i>Head of performance: Julia Searle</a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i>julia@tenniscoaching.london</a></li>
+                                        <li><a href="#"><i class="fa fa-phone"></i>07816 004 992</a></li>
+                                    </ul>
+                                </p>
+                                <img class="img-responsive" src="@Url.Content("~/img/JTennis_logo.jpg")" alt="" />
+
+
+                                
                             </div>
                         </div>
                     </div>
