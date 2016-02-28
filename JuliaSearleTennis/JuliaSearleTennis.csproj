@@ -84,6 +84,7 @@
     <Content Include="CSS\BookingButtons.css" />
     <Content Include="CSS\CalendarIcons.css" />
     <Content Include="CSS\JuniorBookingButtons.css" />
+    <Content Include="Feedback.html" />
     <Content Include="form2email\captcha.asp" />
     <Content Include="form2email\default.asp" />
     <Content Include="form2email\formmail.asp" />
