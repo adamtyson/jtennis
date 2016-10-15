@@ -51,6 +51,5 @@ namespace JuliaSearleTennis.Controllers
         {
             return View();
         }
-
     }
 }
