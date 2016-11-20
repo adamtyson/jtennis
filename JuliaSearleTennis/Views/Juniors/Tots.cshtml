@@ -42,7 +42,57 @@
     </div><!--/row-->
     <div class="row">
 
-        @Html.Partial("~/Views/BookingForms/Autumn2016/_tots.cshtml")
+        <div class="row md-margin-bottom-40">
+            Please note that all players who participate in the coaching programme MUST either be members of the club OR pay a guest fee to the club.
+            Once your coaching registration is complete, the club will send you details regarding guest fee payment or membership application.
+            The guest fee payable is equal to £1.50 per session for juniors and £2.50 per session for adults.
+        </div>
+        <table cellspacing="5" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Spring 2017 Wigmore classes</th>
+                    <th>Autumn 2016 Camber classes</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul class="list-unstyled">
+
+                            <li><i class="fa fa-check color-green"></i>MONDAY 4PM (3-4 YRS)</li>
+                            <li><i class="fa fa-check color-green"></i>TUESDAY 10:30AM (3-4 YRS)*</li>
+                            <li><i class="fa fa-check color-green"></i>THURSDAY 4PM (3-4 YRS)</li>
+                            <li><i class="fa fa-check color-green"></i>FRIDAY 10:30AM (3-4 YRS)*</li>
+                            <li><i class="fa fa-check color-green"></i>FRIDAY 4PM (3-4 YRS)*</li>
+                            <li><i class="fa fa-check color-green"></i>SATURDAY 10AM (3-4YRS)</li>
+                        </ul>
+                        <a href="@Url.Action("Tots","Booking")" class="TotsMini">Book a tots class at Wigmore</a>
+                    </td>
+                    <td>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check color-green"></i>TUESDAY 3:30PM (3-4 YRS)</li>
+                            <li><i class="fa fa-check color-green"></i>THURSDAY 10AM (3-4 YRS)</li>
+
+                        </ul>
+                        <a href="@Url.Action("Tots","BookingCamber")" class="TotsMini">Book a tots class at Camber</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                        <br />
+                        If the course you wish to enrol for is fully booked you can join a waiting list.
+                        <a href="https://docs.google.com/forms/d/1YlmozTfmfFfxmp_c1yQRKEs6rZazMI6b_MXxl510Jw4/viewform?usp=send_form" class="TotsMini">Join a waiting list</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Finding booking difficult? <a href="https://youtu.be/psPArQt_Cu8">View our guidance video</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+
 
     </div>
     <div class="row team margin-bottom-20">
